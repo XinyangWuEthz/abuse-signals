@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+data/
+models/
+metrics.json
+.pytest_cache/
+.DS_Store
+*.egg-info/

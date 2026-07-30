@@ -1,0 +1,49 @@
+# Deterministic rules layer. Precision-first: every rule here should be safe to act on
+# without a human in the loop. Conditions within a rule are ANDed; the account's final
+# action is the highest tier among matched rules.
+#
+# Thresholds are tuned against the synthetic generator's distributions and would need
+# re-tuning on real traffic (see README: limitations).
+
+version: 1
+
+tiers:
+  monitor: 1
+  throttle: 2
+  suspend: 3
+
+rules:
+  - id: R101_signup_farm
+    description: >-
+      Bulk account creation: >=8 accounts sharing one ASN + device fingerprint signed up
+      within a 30-minute window. Legitimate users essentially never do this.
+    action: suspend
+    conditions:
+      - {feature: signup_cohort_30min, op: ">=", threshold: 8}
+
+  - id: R102_api_burst
+    description: >-
+      Velocity abuse: more than 120 events in a single 5-minute bucket points to scripted
+      free-tier farming. Throttle (not suspend) - power users and integrations can burst.
+    action: throttle
+    conditions:
+      - {feature: max_burst_5min, op: ">=", threshold: 120}
+
+  - id: R103_spam_fanout
+    description: >-
+      Content fan-out: one payload delivered to >=150 distinct targets is spam-shaped;
+      combined with low payload diversity it is precision-safe to suspend.
+    action: suspend
+    conditions:
+      - {feature: max_fanout_per_payload, op: ">=", threshold: 150}
+      - {feature: distinct_payloads, op: "<=", threshold: 5}
+
+  - id: R104_dormant_takeover
+    description: >-
+      Takeover shape: >=7 days of complete silence followed by >=100 events in the last
+      48h. Throttle and (in a real system) trigger re-authentication rather than suspend -
+      the rightful owner may simply have returned.
+    action: throttle
+    conditions:
+      - {feature: max_gap_hours, op: ">=", threshold: 168}
+      - {feature: events_last_48h, op: ">=", threshold: 100}
