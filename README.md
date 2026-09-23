@@ -23,21 +23,28 @@ not real traffic or a deployed enforcement system.
 | API | FastAPI serves the rule verdict for a stored account. It does not serve classifiers or execute enforcement actions. |
 | CI | Runs tests and quality regression gates; main-branch and manual runs also publish the full benchmark as an artifact. |
 
-```text
-synthetic accounts + events
-          |
-          v
-SQL features at a fixed cutoff
-          |
-          v
-grouped train / validation / test split
-          |
-          +--> train: fit models and preprocessing
-          +--> validation: choose thresholds and select a model
-          +--> test: compare rules and both fixed models
-                          |
-                          v
-               metrics + predictions + mistakes
+## How the project fits together
+
+The main workflow is an offline experiment. The API is a separate way to query
+the rules against an account's stored features.
+
+```mermaid
+flowchart TD
+    G["Synthetic data generator<br/>Baseline or challenge scenario"] --> DB[("SQLite<br/>Accounts, events, and labels")]
+    DB --> F["SQL feature aggregation<br/>13 signals per account at a fixed cutoff"]
+    F --> E["Offline evaluation<br/>Grouped train / validation / test split"]
+    R["YAML rules"] --> E
+    E --> O["Reports<br/>Model ranking, action precision / recall,<br/>false positives, and missed abuse"]
+    F --> A["FastAPI /score<br/>Look up one account and apply rules"]
+    R --> A
+    A --> V["Suggested action + matched rule IDs"]
+
+    classDef data fill:#eaf2ff,stroke:#4169a1,color:#172b4d;
+    classDef evaluation fill:#e8f5ee,stroke:#36805b,color:#173c2a;
+    classDef serving fill:#fff3df,stroke:#b17b22,color:#513909;
+    class G,DB,F data;
+    class E,O evaluation;
+    class A,V serving;
 ```
 
 ## What the benchmark found
@@ -100,6 +107,33 @@ curl -X POST localhost:8000/score -H 'Content-Type: application/json' \
 ```
 
 ## How evaluation works
+
+Each split contains different ASN/device groups. Models and thresholds are fixed
+before the test accounts are scored.
+
+```mermaid
+flowchart TD
+    S["Group accounts by ASN + device<br/>Keep each group in one partition"]
+    S --> T["Training ~60%<br/>Fit preprocessing and both classifiers"]
+    S --> V["Validation ~20%<br/>Choose each model's action thresholds<br/>and the preferred model by average precision"]
+    T -->|Fitted models| V
+    S --> X["Test ~20%<br/>Held-out accounts and labels"]
+    V --> L["Freeze both models and their thresholds"]
+    L --> C["Compare on the same test accounts<br/>Rules vs. logistic regression vs. gradient boosting"]
+    X --> C
+    R["Fixed YAML rules"] --> C
+    C --> M["Report test results<br/>Average precision for models<br/>Precision, recall, and errors for every detector"]
+
+    classDef train fill:#eaf2ff,stroke:#4169a1,color:#172b4d;
+    classDef validation fill:#fff3df,stroke:#b17b22,color:#513909;
+    classDef test fill:#e8f5ee,stroke:#36805b,color:#173c2a;
+    class T train;
+    class V,L validation;
+    class X,C,M test;
+```
+
+The test branch has no path back to training or threshold selection. Repeat this
+workflow independently for each scenario and seed.
 
 1. **Fix the observation time.** All features use events and signups at or before the recorded
    generation horizon. The recent-activity window ends at that timestamp. Future events cannot
