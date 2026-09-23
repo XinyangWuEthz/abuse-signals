@@ -22,5 +22,16 @@ CREATE TABLE IF NOT EXISTS labels (
     label       TEXT NOT NULL
 );
 
+-- Synthetic ground truth for evaluation slices, never detector input.
+CREATE TABLE IF NOT EXISTS account_metadata (
+    account_id INTEGER PRIMARY KEY REFERENCES accounts(account_id),
+    behavior TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS dataset_metadata (
+    key TEXT PRIMARY KEY,
+    value TEXT NOT NULL
+);
+
 CREATE INDEX IF NOT EXISTS idx_events_account_ts ON events(account_id, ts);
 CREATE INDEX IF NOT EXISTS idx_events_action     ON events(action);

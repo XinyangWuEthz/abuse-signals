@@ -1,6 +1,8 @@
+import numpy as np
 import pytest
 
-from abuse_signals.rules import Condition, Rule, RuleSet, load_rules
+from abuse_signals.metrics import binary_metrics
+from abuse_signals.rules import Condition, Rule, RuleSet, load_rules, precision_recall
 
 TIERS = {"monitor": 1, "throttle": 2, "suspend": 3}
 
@@ -55,3 +57,50 @@ def test_unknown_action_rejected(tmp_path):
     )
     with pytest.raises(ValueError, match="unknown action"):
         load_rules(bad)
+
+
+def test_cumulative_rule_metrics_count_errors_and_false_positive_rate():
+    rows = [{"account_id": i, "label": label}
+            for i, label in enumerate(["farm", "normal", "quota", "normal"])]
+    verdicts = [{"account_id": i, "action": action}
+                for i, action in enumerate(["suspend", "throttle", None, "monitor"])]
+    stats = precision_recall(verdicts, rows, "throttle", TIERS)
+    assert (stats["tp"], stats["fp"], stats["tn"], stats["fn"]) == (1, 1, 1, 1)
+    assert stats["flagged"] == stats["positives"] == stats["negatives"] == 2
+    assert stats["precision"] == stats["recall"] == stats["fpr"] == 0.5
+    assert stats["false_positives_per_1000"] == 500
+    suspend = precision_recall(verdicts, rows, "suspend", TIERS)
+    assert suspend["precision"] == 1.0
+    assert suspend["recall"] == 0.5
+
+
+def test_undefined_metrics_do_not_imply_perfect_precision():
+    no_alerts = binary_metrics(np.array([1, 0]), np.array([0, 0]))
+    assert no_alerts["precision"] is None
+    assert no_alerts["precision_ci_95"]["lower"] is None
+    assert no_alerts["recall"] == 0
+    no_abuse = binary_metrics([0, 0], [1, 0])
+    assert no_abuse["recall"] is None
+    assert no_abuse["precision"] == 0
+    no_normal = binary_metrics([1, 1], [1, 0])
+    assert no_normal["fpr"] is None
+    assert no_normal["false_positives_per_1000"] is None
+    empty = binary_metrics([], [])
+    assert empty["precision"] is empty["recall"] is empty["fpr"] is None
+    assert empty["flagged"] == 0
+
+
+def test_precision_interval_reflects_sample_size_and_discloses_dependence():
+    small = binary_metrics([1] * 5, [1] * 5)["precision_ci_95"]
+    large = binary_metrics([1] * 100, [1] * 100)["precision_ci_95"]
+    assert 0 < small["lower"] < large["lower"] < 1
+    assert small["upper"] == pytest.approx(1)
+    assert "independent" in small["assumption"]
+    assert "cohort" in small["assumption"]
+
+
+def test_binary_metrics_reject_misaligned_or_nonbinary_inputs():
+    with pytest.raises(ValueError, match="same length"):
+        binary_metrics([1, 0], [1])
+    with pytest.raises(ValueError, match="binary"):
+        binary_metrics([1, 2], [1, 0])

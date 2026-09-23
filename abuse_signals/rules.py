@@ -1,8 +1,7 @@
 """YAML-configured deterministic rules layer.
 
-Rules are the precision-first fast path of the detector: interpretable, versioned,
-instantly deployable, and safe to attach severe actions to. Model-based coverage
-lives in train.py; both meet in the enforcement tiers.
+Rules provide interpretable action recommendations. Their precision must be
+measured against normal users, including legitimate high-volume behavior.
 """
 
 from __future__ import annotations
@@ -15,6 +14,7 @@ from pathlib import Path
 import yaml
 
 from .features import load_features
+from .metrics import binary_metrics
 
 _OPS = {">=": operator.ge, ">": operator.gt, "<=": operator.le, "<": operator.lt, "==": operator.eq}
 
@@ -79,12 +79,15 @@ def precision_recall(verdicts: list[dict], rows: list[dict], action: str, tiers:
     floor = tiers[action]
     flagged = {v["account_id"] for v in verdicts
                if v["action"] and tiers[v["action"]] >= floor}
-    abusive = {r["account_id"] for r in rows if r["label"] != "normal"}
-    true_pos = len(flagged & abusive)
-    precision = true_pos / len(flagged) if flagged else 1.0
-    recall = true_pos / len(abusive) if abusive else 0.0
-    return {"action": action, "flagged": len(flagged),
-            "precision": precision, "recall": recall}
+    account_ids = {r["account_id"] for r in rows}
+    if len(account_ids) != len(rows):
+        raise ValueError("evaluation rows must have unique account IDs")
+    if not flagged <= account_ids:
+        raise ValueError("flagged account is absent from evaluation rows")
+    return {"action": action, **binary_metrics(
+        [r["label"] != "normal" for r in rows],
+        [r["account_id"] in flagged for r in rows],
+    )}
 
 
 def main() -> None:
@@ -100,8 +103,10 @@ def main() -> None:
     print(f"{'tier':>10} {'flagged':>8} {'precision':>10} {'recall':>8}")
     for action in sorted(ruleset.tiers, key=ruleset.tiers.get):
         stats = precision_recall(verdicts, rows, action, ruleset.tiers)
+        precision = f"{stats['precision']:.3f}" if stats['precision'] is not None else "n/a"
+        recall = f"{stats['recall']:.3f}" if stats['recall'] is not None else "n/a"
         print(f"{action:>10} {stats['flagged']:>8} "
-              f"{stats['precision']:>10.3f} {stats['recall']:>8.3f}")
+              f"{precision:>10} {recall:>8}")
 
 
 if __name__ == "__main__":

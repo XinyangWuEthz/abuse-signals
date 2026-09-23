@@ -1,9 +1,9 @@
-# Deterministic rules layer. Precision-first: every rule here should be safe to act on
-# without a human in the loop. Conditions within a rule are ANDed; the account's final
-# action is the highest tier among matched rules.
+# Deterministic rule hypotheses. Conditions within a rule are ANDed; the account's
+# suggested action is the highest tier among matched rules. Legitimate lookalikes
+# can match these rules: inspect the challenge benchmark before interpreting precision.
 #
 # Thresholds are tuned against the synthetic generator's distributions and would need
-# re-tuning on real traffic (see README: limitations).
+# independent validation on real traffic. This prototype does not enforce actions.
 
 version: 1
 
@@ -16,7 +16,7 @@ rules:
   - id: R101_signup_farm
     description: >-
       Bulk account creation: >=8 accounts sharing one ASN + device fingerprint signed up
-      within a 30-minute window. Legitimate users essentially never do this.
+      within a 30-minute neighborhood. Legitimate shared devices can also match.
     action: suspend
     conditions:
       - {feature: signup_cohort_30min, op: ">=", threshold: 8}
@@ -32,7 +32,8 @@ rules:
   - id: R103_spam_fanout
     description: >-
       Content fan-out: one payload delivered to >=150 distinct targets is spam-shaped;
-      combined with low payload diversity it is precision-safe to suspend.
+      combined with low payload diversity it suggests bulk messaging. Authorized
+      broadcasts can also match; a match does not establish permission to suspend.
     action: suspend
     conditions:
       - {feature: max_fanout_per_payload, op: ">=", threshold: 150}

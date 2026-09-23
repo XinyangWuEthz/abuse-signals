@@ -1,0 +1,3809 @@
+{
+  "accounts_per_run": 20000,
+  "aggregate": {
+    "baseline": {
+      "hist_gradient_boosting": {
+        "average_precision": {
+          "defined_runs": 3,
+          "max": 1.0,
+          "mean": 1.0,
+          "min": 0.9999999999999999,
+          "total_runs": 3
+        },
+        "tiers": {
+          "suspend": {
+            "false_positives_per_1000": {
+              "defined_runs": 3,
+              "max": 0.0,
+              "mean": 0.0,
+              "min": 0.0,
+              "total_runs": 3
+            },
+            "flagged": {
+              "defined_runs": 3,
+              "max": 182,
+              "mean": 178.33333333333334,
+              "min": 174,
+              "total_runs": 3
+            },
+            "precision": {
+              "defined_runs": 3,
+              "max": 1.0,
+              "mean": 1.0,
+              "min": 1.0,
+              "total_runs": 3
+            },
+            "recall": {
+              "defined_runs": 3,
+              "max": 1.0,
+              "mean": 0.9926935703419009,
+              "min": 0.988950276243094,
+              "total_runs": 3
+            }
+          },
+          "throttle": {
+            "false_positives_per_1000": {
+              "defined_runs": 3,
+              "max": 0.0,
+              "mean": 0.0,
+              "min": 0.0,
+              "total_runs": 3
+            },
+            "flagged": {
+              "defined_runs": 3,
+              "max": 182,
+              "mean": 178.33333333333334,
+              "min": 174,
+              "total_runs": 3
+            },
+            "precision": {
+              "defined_runs": 3,
+              "max": 1.0,
+              "mean": 1.0,
+              "min": 1.0,
+              "total_runs": 3
+            },
+            "recall": {
+              "defined_runs": 3,
+              "max": 1.0,
+              "mean": 0.9926935703419009,
+              "min": 0.988950276243094,
+              "total_runs": 3
+            }
+          }
+        }
+      },
+      "logistic_regression": {
+        "average_precision": {
+          "defined_runs": 3,
+          "max": 1.0000000000000002,
+          "mean": 1.0,
+          "min": 1.0,
+          "total_runs": 3
+        },
+        "tiers": {
+          "suspend": {
+            "false_positives_per_1000": {
+              "defined_runs": 3,
+              "max": 0.0,
+              "mean": 0.0,
+              "min": 0.0,
+              "total_runs": 3
+            },
+            "flagged": {
+              "defined_runs": 3,
+              "max": 184,
+              "mean": 179.66666666666666,
+              "min": 174,
+              "total_runs": 3
+            },
+            "precision": {
+              "defined_runs": 3,
+              "max": 1.0,
+              "mean": 1.0,
+              "min": 1.0,
+              "total_runs": 3
+            },
+            "recall": {
+              "defined_runs": 3,
+              "max": 1.0,
+              "mean": 1.0,
+              "min": 1.0,
+              "total_runs": 3
+            }
+          },
+          "throttle": {
+            "false_positives_per_1000": {
+              "defined_runs": 3,
+              "max": 0.0,
+              "mean": 0.0,
+              "min": 0.0,
+              "total_runs": 3
+            },
+            "flagged": {
+              "defined_runs": 3,
+              "max": 184,
+              "mean": 179.66666666666666,
+              "min": 174,
+              "total_runs": 3
+            },
+            "precision": {
+              "defined_runs": 3,
+              "max": 1.0,
+              "mean": 1.0,
+              "min": 1.0,
+              "total_runs": 3
+            },
+            "recall": {
+              "defined_runs": 3,
+              "max": 1.0,
+              "mean": 1.0,
+              "min": 1.0,
+              "total_runs": 3
+            }
+          }
+        }
+      },
+      "rules": {
+        "average_precision": {
+          "defined_runs": 0,
+          "max": null,
+          "mean": null,
+          "min": null,
+          "total_runs": 3
+        },
+        "tiers": {
+          "suspend": {
+            "false_positives_per_1000": {
+              "defined_runs": 3,
+              "max": 0.0,
+              "mean": 0.0,
+              "min": 0.0,
+              "total_runs": 3
+            },
+            "flagged": {
+              "defined_runs": 3,
+              "max": 124,
+              "mean": 119.66666666666667,
+              "min": 114,
+              "total_runs": 3
+            },
+            "precision": {
+              "defined_runs": 3,
+              "max": 1.0,
+              "mean": 1.0,
+              "min": 1.0,
+              "total_runs": 3
+            },
+            "recall": {
+              "defined_runs": 3,
+              "max": 0.6739130434782609,
+              "mean": 0.6658645815213939,
+              "min": 0.6551724137931034,
+              "total_runs": 3
+            }
+          },
+          "throttle": {
+            "false_positives_per_1000": {
+              "defined_runs": 3,
+              "max": 0.0,
+              "mean": 0.0,
+              "min": 0.0,
+              "total_runs": 3
+            },
+            "flagged": {
+              "defined_runs": 3,
+              "max": 184,
+              "mean": 179.66666666666666,
+              "min": 174,
+              "total_runs": 3
+            },
+            "precision": {
+              "defined_runs": 3,
+              "max": 1.0,
+              "mean": 1.0,
+              "min": 1.0,
+              "total_runs": 3
+            },
+            "recall": {
+              "defined_runs": 3,
+              "max": 1.0,
+              "mean": 1.0,
+              "min": 1.0,
+              "total_runs": 3
+            }
+          }
+        }
+      }
+    },
+    "challenge": {
+      "hist_gradient_boosting": {
+        "average_precision": {
+          "defined_runs": 3,
+          "max": 0.992567585723948,
+          "mean": 0.9880196813964713,
+          "min": 0.980587939331317,
+          "total_runs": 3
+        },
+        "tiers": {
+          "suspend": {
+            "false_positives_per_1000": {
+              "defined_runs": 3,
+              "max": 0.5232862375719518,
+              "mean": 0.17442874585731727,
+              "min": 0.0,
+              "total_runs": 3
+            },
+            "flagged": {
+              "defined_runs": 3,
+              "max": 172,
+              "mean": 166.33333333333334,
+              "min": 163,
+              "total_runs": 3
+            },
+            "precision": {
+              "defined_runs": 3,
+              "max": 1.0,
+              "mean": 0.9961240310077519,
+              "min": 0.9883720930232558,
+              "total_runs": 3
+            },
+            "recall": {
+              "defined_runs": 3,
+              "max": 0.9289617486338798,
+              "mean": 0.9053100716500574,
+              "min": 0.8858695652173914,
+              "total_runs": 3
+            }
+          },
+          "throttle": {
+            "false_positives_per_1000": {
+              "defined_runs": 3,
+              "max": 3.924646781789639,
+              "mean": 3.0530509962073165,
+              "min": 2.0931449502878072,
+              "total_runs": 3
+            },
+            "flagged": {
+              "defined_runs": 3,
+              "max": 189,
+              "mean": 187,
+              "min": 186,
+              "total_runs": 3
+            },
+            "precision": {
+              "defined_runs": 3,
+              "max": 0.956989247311828,
+              "mean": 0.9377026796381634,
+              "min": 0.9206349206349206,
+              "total_runs": 3
+            },
+            "recall": {
+              "defined_runs": 3,
+              "max": 0.967391304347826,
+              "mean": 0.9580849775076432,
+              "min": 0.9508196721311475,
+              "total_runs": 3
+            }
+          }
+        }
+      },
+      "logistic_regression": {
+        "average_precision": {
+          "defined_runs": 3,
+          "max": 0.9059947536587479,
+          "mean": 0.8827211123436701,
+          "min": 0.8674790861852014,
+          "total_runs": 3
+        },
+        "tiers": {
+          "suspend": {
+            "false_positives_per_1000": {
+              "defined_runs": 3,
+              "max": 0.0,
+              "mean": 0.0,
+              "min": 0.0,
+              "total_runs": 3
+            },
+            "flagged": {
+              "defined_runs": 3,
+              "max": 42,
+              "mean": 31.666666666666668,
+              "min": 20,
+              "total_runs": 3
+            },
+            "precision": {
+              "defined_runs": 3,
+              "max": 1.0,
+              "mean": 1.0,
+              "min": 1.0,
+              "total_runs": 3
+            },
+            "recall": {
+              "defined_runs": 3,
+              "max": 0.22826086956521738,
+              "mean": 0.1728262827692621,
+              "min": 0.10989010989010989,
+              "total_runs": 3
+            }
+          },
+          "throttle": {
+            "false_positives_per_1000": {
+              "defined_runs": 3,
+              "max": 3.663003663003663,
+              "mean": 2.7038282086898393,
+              "min": 1.0471204188481675,
+              "total_runs": 3
+            },
+            "flagged": {
+              "defined_runs": 3,
+              "max": 132,
+              "mean": 127.66666666666667,
+              "min": 122,
+              "total_runs": 3
+            },
+            "precision": {
+              "defined_runs": 3,
+              "max": 0.9672131147540983,
+              "mean": 0.920067044828768,
+              "min": 0.8914728682170543,
+              "total_runs": 3
+            },
+            "recall": {
+              "defined_runs": 3,
+              "max": 0.6483516483516484,
+              "mean": 0.6411686931109597,
+              "min": 0.6284153005464481,
+              "total_runs": 3
+            }
+          }
+        }
+      },
+      "rules": {
+        "average_precision": {
+          "defined_runs": 0,
+          "max": null,
+          "mean": null,
+          "min": null,
+          "total_runs": 3
+        },
+        "tiers": {
+          "suspend": {
+            "false_positives_per_1000": {
+              "defined_runs": 3,
+              "max": 29.56567242281528,
+              "mean": 27.12755124871804,
+              "min": 22.25130890052356,
+              "total_runs": 3
+            },
+            "flagged": {
+              "defined_runs": 3,
+              "max": 176,
+              "mean": 166,
+              "min": 148,
+              "total_runs": 3
+            },
+            "precision": {
+              "defined_runs": 3,
+              "max": 0.42567567567567566,
+              "mean": 0.3780683112579664,
+              "min": 0.3505747126436782,
+              "total_runs": 3
+            },
+            "recall": {
+              "defined_runs": 3,
+              "max": 0.34615384615384615,
+              "mean": 0.3406459601220827,
+              "min": 0.33152173913043476,
+              "total_runs": 3
+            }
+          },
+          "throttle": {
+            "false_positives_per_1000": {
+              "defined_runs": 3,
+              "max": 104.91889063317635,
+              "mean": 100.57451897392062,
+              "min": 93.717277486911,
+              "total_runs": 3
+            },
+            "flagged": {
+              "defined_runs": 3,
+              "max": 492,
+              "mean": 477.3333333333333,
+              "min": 453,
+              "total_runs": 3
+            },
+            "precision": {
+              "defined_runs": 3,
+              "max": 0.2097130242825607,
+              "mean": 0.1952124887595069,
+              "min": 0.18495934959349594,
+              "total_runs": 3
+            },
+            "recall": {
+              "defined_runs": 3,
+              "max": 0.521978021978022,
+              "mean": 0.5082466535602672,
+              "min": 0.4945652173913043,
+              "total_runs": 3
+            }
+          }
+        }
+      }
+    }
+  },
+  "min_alerts": 5,
+  "provenance": {
+    "dependencies": {
+      "joblib": "1.5.3",
+      "numpy": "2.0.2",
+      "pyyaml": "6.0.3",
+      "scikit-learn": "1.6.1",
+      "scipy": "1.13.1",
+      "threadpoolctl": "3.6.0"
+    },
+    "git_head_at_run": "cf938dad8f728291c9c56378fdb046b8308bf17f",
+    "platform": "macOS-14.4-arm64-arm-64bit",
+    "python": "3.12.8",
+    "source_files_sha256": {
+      "abuse_signals/__init__.py": "81bbe9c6b9be7dde3a7863cd88e2d07726e04c391d20498edf9b9ec46308afc0",
+      "abuse_signals/benchmark.py": "7c6e88fce37c9e11d1725a66ca5f10f527b39b58f9804b950baf11f413d276eb",
+      "abuse_signals/config.py": "37f3faacb9950bf944688f60d62ea653a46d48b4b982e586ac5319c09ff38cb9",
+      "abuse_signals/features.py": "9dc1af1d9200f8d1cf72b112fde029abcc3af7764a8e5b483031b4b4621d5442",
+      "abuse_signals/generate.py": "e28a3d1eeb27bc471c42e37d6472cc88a8cb606d0dc0bb8b1102199182a72c00",
+      "abuse_signals/metrics.py": "eb89ec60de3dd5a3cd9eab528faa63e7345e32a9f1e4a83bbc63835812bc7d1e",
+      "abuse_signals/rules.py": "63afc6a3c088c16591a5c1996cf7cbce094c74b602babcf716d31bc14d49cd6f",
+      "abuse_signals/rules.yaml": "0da181cbc099c4742fce8e7eae2ff6b6f4359786c225c7dce2959126f706e5d1",
+      "abuse_signals/serve.py": "b52989d7f87e695abe52430daeea4cce45c7d59988ba9f727edcd93986a64a7d",
+      "abuse_signals/sql/features.sql": "5033cf34495e2946302c971132a5f64e1f0ce205e71f95cbaf7aa13f45e1d6c4",
+      "abuse_signals/sql/schema.sql": "508fe50ccae9fa1c669ebf78ea1b3dfd6070e63a105fb0818963b343f5ea09a3",
+      "abuse_signals/train.py": "f5dfb5ee89d598b9c8b1d297b436a0cbb81d65d54f6a878c84c83d2618a5f9b6",
+      "requirements-benchmark.txt": "0100d9a6417f74803c1990e359e48eae8c335aae22ffb641572262448907adcc",
+      "requirements.txt": "6ab4e9b52ddafd621fb02f91c736319a5c74b5e4e28338f9240ab76399e7a8e7"
+    },
+    "source_sha256": "26e0b1376dd847d71880168739c27fdc4afe2d350d5310651da6204d724d11db",
+    "thread_environment": {
+      "LOKY_MAX_CPU_COUNT": "2",
+      "OMP_NUM_THREADS": "2",
+      "OPENBLAS_NUM_THREADS": "1"
+    },
+    "working_tree_dirty_at_run": true
+  },
+  "reproduce_command": "python -m abuse_signals.benchmark --accounts 20000 --seeds 7 17 29 --scenarios baseline challenge --min-alerts 5 --out reports/evaluation",
+  "runs": [
+    {
+      "abuse_rate_test": 0.04595404595404595,
+      "as_of": 1781209600,
+      "config": {
+        "challenge_legitimate_fraction": 0.04,
+        "challenge_subtle_fraction": 0.5,
+        "days": 14,
+        "frac_ato": 0.005,
+        "frac_farm": 0.02,
+        "frac_quota": 0.01,
+        "frac_spam_fanout": 0.01,
+        "max_daily_events": 40,
+        "min_daily_events": 5,
+        "n_accounts": 20000,
+        "n_asns": 800,
+        "scenario": "baseline",
+        "seed": 7,
+        "start_ts": 1780000000
+      },
+      "counts": {
+        "accounts": 20000,
+        "ato": 100,
+        "events": 2984556,
+        "farm": 400,
+        "normal": 19100,
+        "quota": 200,
+        "spam_fanout": 200
+      },
+      "evaluation_scope": "retrospective synthetic accounts; no chronological holdout",
+      "min_alerts": 5,
+      "models": {
+        "hist_gradient_boosting": {
+          "average_precision": 1.0,
+          "tiers": {
+            "suspend": {
+              "behavior_false_positives": {
+                "normal": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 3820
+                }
+              },
+              "calibration": {
+                "feasible": true,
+                "metrics": {
+                  "false_positives_per_1000": 0.0,
+                  "flagged": 182,
+                  "fn": 0,
+                  "fp": 0,
+                  "fpr": 0.0,
+                  "negatives": 3820,
+                  "positives": 182,
+                  "precision": 1.0,
+                  "precision_ci_95": {
+                    "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                    "lower": 0.979329376528407,
+                    "method": "Wilson score, 95%",
+                    "upper": 1.0
+                  },
+                  "recall": 1.0,
+                  "tn": 3820,
+                  "tp": 182
+                },
+                "min_alerts": 5,
+                "reason": null
+              },
+              "incremental_vs_rules": {
+                "additional_false_positives": 0,
+                "additional_true_positives": 58,
+                "avoided_rule_false_positives": 0,
+                "missed_rule_true_positives": 0
+              },
+              "metrics": {
+                "false_positives_per_1000": 0.0,
+                "flagged": 182,
+                "fn": 2,
+                "fp": 0,
+                "fpr": 0.0,
+                "negatives": 3820,
+                "positives": 184,
+                "precision": 1.0,
+                "precision_ci_95": {
+                  "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                  "lower": 0.979329376528407,
+                  "method": "Wilson score, 95%",
+                  "upper": 1.0
+                },
+                "recall": 0.9891304347826086,
+                "tn": 3820,
+                "tp": 182
+              },
+              "per_pattern_recall": {
+                "ato": {
+                  "detected": 18,
+                  "positives": 20,
+                  "recall": 0.9
+                },
+                "farm": {
+                  "detected": 84,
+                  "positives": 84,
+                  "recall": 1.0
+                },
+                "quota": {
+                  "detected": 40,
+                  "positives": 40,
+                  "recall": 1.0
+                },
+                "spam_fanout": {
+                  "detected": 40,
+                  "positives": 40,
+                  "recall": 1.0
+                }
+              },
+              "precision_floor": 0.99,
+              "threshold": 0.9999472782804586
+            },
+            "throttle": {
+              "behavior_false_positives": {
+                "normal": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 3820
+                }
+              },
+              "calibration": {
+                "feasible": true,
+                "metrics": {
+                  "false_positives_per_1000": 0.0,
+                  "flagged": 182,
+                  "fn": 0,
+                  "fp": 0,
+                  "fpr": 0.0,
+                  "negatives": 3820,
+                  "positives": 182,
+                  "precision": 1.0,
+                  "precision_ci_95": {
+                    "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                    "lower": 0.979329376528407,
+                    "method": "Wilson score, 95%",
+                    "upper": 1.0
+                  },
+                  "recall": 1.0,
+                  "tn": 3820,
+                  "tp": 182
+                },
+                "min_alerts": 5,
+                "reason": null
+              },
+              "incremental_vs_rules": {
+                "additional_false_positives": 0,
+                "additional_true_positives": 0,
+                "avoided_rule_false_positives": 0,
+                "missed_rule_true_positives": 2
+              },
+              "metrics": {
+                "false_positives_per_1000": 0.0,
+                "flagged": 182,
+                "fn": 2,
+                "fp": 0,
+                "fpr": 0.0,
+                "negatives": 3820,
+                "positives": 184,
+                "precision": 1.0,
+                "precision_ci_95": {
+                  "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                  "lower": 0.979329376528407,
+                  "method": "Wilson score, 95%",
+                  "upper": 1.0
+                },
+                "recall": 0.9891304347826086,
+                "tn": 3820,
+                "tp": 182
+              },
+              "per_pattern_recall": {
+                "ato": {
+                  "detected": 18,
+                  "positives": 20,
+                  "recall": 0.9
+                },
+                "farm": {
+                  "detected": 84,
+                  "positives": 84,
+                  "recall": 1.0
+                },
+                "quota": {
+                  "detected": 40,
+                  "positives": 40,
+                  "recall": 1.0
+                },
+                "spam_fanout": {
+                  "detected": 40,
+                  "positives": 40,
+                  "recall": 1.0
+                }
+              },
+              "precision_floor": 0.9,
+              "threshold": 0.9999472782804586
+            }
+          },
+          "validation_average_precision": 0.9999999999999999
+        },
+        "logistic_regression": {
+          "average_precision": 1.0000000000000002,
+          "tiers": {
+            "suspend": {
+              "behavior_false_positives": {
+                "normal": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 3820
+                }
+              },
+              "calibration": {
+                "feasible": true,
+                "metrics": {
+                  "false_positives_per_1000": 0.0,
+                  "flagged": 182,
+                  "fn": 0,
+                  "fp": 0,
+                  "fpr": 0.0,
+                  "negatives": 3820,
+                  "positives": 182,
+                  "precision": 1.0,
+                  "precision_ci_95": {
+                    "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                    "lower": 0.979329376528407,
+                    "method": "Wilson score, 95%",
+                    "upper": 1.0
+                  },
+                  "recall": 1.0,
+                  "tn": 3820,
+                  "tp": 182
+                },
+                "min_alerts": 5,
+                "reason": null
+              },
+              "incremental_vs_rules": {
+                "additional_false_positives": 0,
+                "additional_true_positives": 60,
+                "avoided_rule_false_positives": 0,
+                "missed_rule_true_positives": 0
+              },
+              "metrics": {
+                "false_positives_per_1000": 0.0,
+                "flagged": 184,
+                "fn": 0,
+                "fp": 0,
+                "fpr": 0.0,
+                "negatives": 3820,
+                "positives": 184,
+                "precision": 1.0,
+                "precision_ci_95": {
+                  "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                  "lower": 0.9795494623774134,
+                  "method": "Wilson score, 95%",
+                  "upper": 0.9999999999999999
+                },
+                "recall": 1.0,
+                "tn": 3820,
+                "tp": 184
+              },
+              "per_pattern_recall": {
+                "ato": {
+                  "detected": 20,
+                  "positives": 20,
+                  "recall": 1.0
+                },
+                "farm": {
+                  "detected": 84,
+                  "positives": 84,
+                  "recall": 1.0
+                },
+                "quota": {
+                  "detected": 40,
+                  "positives": 40,
+                  "recall": 1.0
+                },
+                "spam_fanout": {
+                  "detected": 40,
+                  "positives": 40,
+                  "recall": 1.0
+                }
+              },
+              "precision_floor": 0.99,
+              "threshold": 0.9765081221715989
+            },
+            "throttle": {
+              "behavior_false_positives": {
+                "normal": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 3820
+                }
+              },
+              "calibration": {
+                "feasible": true,
+                "metrics": {
+                  "false_positives_per_1000": 0.0,
+                  "flagged": 182,
+                  "fn": 0,
+                  "fp": 0,
+                  "fpr": 0.0,
+                  "negatives": 3820,
+                  "positives": 182,
+                  "precision": 1.0,
+                  "precision_ci_95": {
+                    "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                    "lower": 0.979329376528407,
+                    "method": "Wilson score, 95%",
+                    "upper": 1.0
+                  },
+                  "recall": 1.0,
+                  "tn": 3820,
+                  "tp": 182
+                },
+                "min_alerts": 5,
+                "reason": null
+              },
+              "incremental_vs_rules": {
+                "additional_false_positives": 0,
+                "additional_true_positives": 0,
+                "avoided_rule_false_positives": 0,
+                "missed_rule_true_positives": 0
+              },
+              "metrics": {
+                "false_positives_per_1000": 0.0,
+                "flagged": 184,
+                "fn": 0,
+                "fp": 0,
+                "fpr": 0.0,
+                "negatives": 3820,
+                "positives": 184,
+                "precision": 1.0,
+                "precision_ci_95": {
+                  "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                  "lower": 0.9795494623774134,
+                  "method": "Wilson score, 95%",
+                  "upper": 0.9999999999999999
+                },
+                "recall": 1.0,
+                "tn": 3820,
+                "tp": 184
+              },
+              "per_pattern_recall": {
+                "ato": {
+                  "detected": 20,
+                  "positives": 20,
+                  "recall": 1.0
+                },
+                "farm": {
+                  "detected": 84,
+                  "positives": 84,
+                  "recall": 1.0
+                },
+                "quota": {
+                  "detected": 40,
+                  "positives": 40,
+                  "recall": 1.0
+                },
+                "spam_fanout": {
+                  "detected": 40,
+                  "positives": 40,
+                  "recall": 1.0
+                }
+              },
+              "precision_floor": 0.9,
+              "threshold": 0.9765081221715989
+            }
+          },
+          "validation_average_precision": 1.0
+        }
+      },
+      "n_test": 4004,
+      "n_train": 11994,
+      "n_validation": 4002,
+      "rules": {
+        "tiers": {
+          "suspend": {
+            "behavior_false_positives": {
+              "normal": {
+                "false_positive_rate": 0.0,
+                "false_positives": 0,
+                "negatives": 3820
+              }
+            },
+            "metrics": {
+              "false_positives_per_1000": 0.0,
+              "flagged": 124,
+              "fn": 60,
+              "fp": 0,
+              "fpr": 0.0,
+              "negatives": 3820,
+              "positives": 184,
+              "precision": 1.0,
+              "precision_ci_95": {
+                "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                "lower": 0.9699513846593223,
+                "method": "Wilson score, 95%",
+                "upper": 0.9999999999999999
+              },
+              "recall": 0.6739130434782609,
+              "tn": 3820,
+              "tp": 124
+            },
+            "per_pattern_recall": {
+              "ato": {
+                "detected": 0,
+                "positives": 20,
+                "recall": 0.0
+              },
+              "farm": {
+                "detected": 84,
+                "positives": 84,
+                "recall": 1.0
+              },
+              "quota": {
+                "detected": 0,
+                "positives": 40,
+                "recall": 0.0
+              },
+              "spam_fanout": {
+                "detected": 40,
+                "positives": 40,
+                "recall": 1.0
+              }
+            }
+          },
+          "throttle": {
+            "behavior_false_positives": {
+              "normal": {
+                "false_positive_rate": 0.0,
+                "false_positives": 0,
+                "negatives": 3820
+              }
+            },
+            "metrics": {
+              "false_positives_per_1000": 0.0,
+              "flagged": 184,
+              "fn": 0,
+              "fp": 0,
+              "fpr": 0.0,
+              "negatives": 3820,
+              "positives": 184,
+              "precision": 1.0,
+              "precision_ci_95": {
+                "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                "lower": 0.9795494623774134,
+                "method": "Wilson score, 95%",
+                "upper": 0.9999999999999999
+              },
+              "recall": 1.0,
+              "tn": 3820,
+              "tp": 184
+            },
+            "per_pattern_recall": {
+              "ato": {
+                "detected": 20,
+                "positives": 20,
+                "recall": 1.0
+              },
+              "farm": {
+                "detected": 84,
+                "positives": 84,
+                "recall": 1.0
+              },
+              "quota": {
+                "detected": 40,
+                "positives": 40,
+                "recall": 1.0
+              },
+              "spam_fanout": {
+                "detected": 40,
+                "positives": 40,
+                "recall": 1.0
+              }
+            }
+          }
+        }
+      },
+      "scenario": "baseline",
+      "schema_version": 2,
+      "seed": 7,
+      "selected_model": "logistic_regression",
+      "selection": {
+        "metric": "validation_average_precision",
+        "scores": {
+          "hist_gradient_boosting": 0.9999999999999999,
+          "logistic_regression": 1.0
+        },
+        "tie_break": "alphabetical model name"
+      },
+      "source_sha256": "26e0b1376dd847d71880168739c27fdc4afe2d350d5310651da6204d724d11db",
+      "split_strategy": "synthetic label/behavior-stratified ASN/device groups, seeded group order, target 60/20/20; rare behaviors pooled within label"
+    },
+    {
+      "abuse_rate_test": 0.04356534802203305,
+      "as_of": 1781209600,
+      "config": {
+        "challenge_legitimate_fraction": 0.04,
+        "challenge_subtle_fraction": 0.5,
+        "days": 14,
+        "frac_ato": 0.005,
+        "frac_farm": 0.02,
+        "frac_quota": 0.01,
+        "frac_spam_fanout": 0.01,
+        "max_daily_events": 40,
+        "min_daily_events": 5,
+        "n_accounts": 20000,
+        "n_asns": 800,
+        "scenario": "baseline",
+        "seed": 17,
+        "start_ts": 1780000000
+      },
+      "counts": {
+        "accounts": 20000,
+        "ato": 100,
+        "events": 3022814,
+        "farm": 400,
+        "normal": 19100,
+        "quota": 200,
+        "spam_fanout": 200
+      },
+      "evaluation_scope": "retrospective synthetic accounts; no chronological holdout",
+      "min_alerts": 5,
+      "models": {
+        "hist_gradient_boosting": {
+          "average_precision": 1.0,
+          "tiers": {
+            "suspend": {
+              "behavior_false_positives": {
+                "normal": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 3820
+                }
+              },
+              "calibration": {
+                "feasible": true,
+                "metrics": {
+                  "false_positives_per_1000": 0.0,
+                  "flagged": 175,
+                  "fn": 0,
+                  "fp": 0,
+                  "fpr": 0.0,
+                  "negatives": 3820,
+                  "positives": 175,
+                  "precision": 1.0,
+                  "precision_ci_95": {
+                    "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                    "lower": 0.9785203115316479,
+                    "method": "Wilson score, 95%",
+                    "upper": 1.0
+                  },
+                  "recall": 1.0,
+                  "tn": 3820,
+                  "tp": 175
+                },
+                "min_alerts": 5,
+                "reason": null
+              },
+              "incremental_vs_rules": {
+                "additional_false_positives": 0,
+                "additional_true_positives": 60,
+                "avoided_rule_false_positives": 0,
+                "missed_rule_true_positives": 0
+              },
+              "metrics": {
+                "false_positives_per_1000": 0.0,
+                "flagged": 174,
+                "fn": 0,
+                "fp": 0,
+                "fpr": 0.0,
+                "negatives": 3820,
+                "positives": 174,
+                "precision": 1.0,
+                "precision_ci_95": {
+                  "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                  "lower": 0.9783995315481122,
+                  "method": "Wilson score, 95%",
+                  "upper": 1.0
+                },
+                "recall": 1.0,
+                "tn": 3820,
+                "tp": 174
+              },
+              "per_pattern_recall": {
+                "ato": {
+                  "detected": 20,
+                  "positives": 20,
+                  "recall": 1.0
+                },
+                "farm": {
+                  "detected": 74,
+                  "positives": 74,
+                  "recall": 1.0
+                },
+                "quota": {
+                  "detected": 40,
+                  "positives": 40,
+                  "recall": 1.0
+                },
+                "spam_fanout": {
+                  "detected": 40,
+                  "positives": 40,
+                  "recall": 1.0
+                }
+              },
+              "precision_floor": 0.99,
+              "threshold": 0.9999584579725593
+            },
+            "throttle": {
+              "behavior_false_positives": {
+                "normal": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 3820
+                }
+              },
+              "calibration": {
+                "feasible": true,
+                "metrics": {
+                  "false_positives_per_1000": 0.0,
+                  "flagged": 175,
+                  "fn": 0,
+                  "fp": 0,
+                  "fpr": 0.0,
+                  "negatives": 3820,
+                  "positives": 175,
+                  "precision": 1.0,
+                  "precision_ci_95": {
+                    "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                    "lower": 0.9785203115316479,
+                    "method": "Wilson score, 95%",
+                    "upper": 1.0
+                  },
+                  "recall": 1.0,
+                  "tn": 3820,
+                  "tp": 175
+                },
+                "min_alerts": 5,
+                "reason": null
+              },
+              "incremental_vs_rules": {
+                "additional_false_positives": 0,
+                "additional_true_positives": 0,
+                "avoided_rule_false_positives": 0,
+                "missed_rule_true_positives": 0
+              },
+              "metrics": {
+                "false_positives_per_1000": 0.0,
+                "flagged": 174,
+                "fn": 0,
+                "fp": 0,
+                "fpr": 0.0,
+                "negatives": 3820,
+                "positives": 174,
+                "precision": 1.0,
+                "precision_ci_95": {
+                  "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                  "lower": 0.9783995315481122,
+                  "method": "Wilson score, 95%",
+                  "upper": 1.0
+                },
+                "recall": 1.0,
+                "tn": 3820,
+                "tp": 174
+              },
+              "per_pattern_recall": {
+                "ato": {
+                  "detected": 20,
+                  "positives": 20,
+                  "recall": 1.0
+                },
+                "farm": {
+                  "detected": 74,
+                  "positives": 74,
+                  "recall": 1.0
+                },
+                "quota": {
+                  "detected": 40,
+                  "positives": 40,
+                  "recall": 1.0
+                },
+                "spam_fanout": {
+                  "detected": 40,
+                  "positives": 40,
+                  "recall": 1.0
+                }
+              },
+              "precision_floor": 0.9,
+              "threshold": 0.9999584579725593
+            }
+          },
+          "validation_average_precision": 1.0
+        },
+        "logistic_regression": {
+          "average_precision": 1.0,
+          "tiers": {
+            "suspend": {
+              "behavior_false_positives": {
+                "normal": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 3820
+                }
+              },
+              "calibration": {
+                "feasible": true,
+                "metrics": {
+                  "false_positives_per_1000": 0.0,
+                  "flagged": 175,
+                  "fn": 0,
+                  "fp": 0,
+                  "fpr": 0.0,
+                  "negatives": 3820,
+                  "positives": 175,
+                  "precision": 1.0,
+                  "precision_ci_95": {
+                    "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                    "lower": 0.9785203115316479,
+                    "method": "Wilson score, 95%",
+                    "upper": 1.0
+                  },
+                  "recall": 1.0,
+                  "tn": 3820,
+                  "tp": 175
+                },
+                "min_alerts": 5,
+                "reason": null
+              },
+              "incremental_vs_rules": {
+                "additional_false_positives": 0,
+                "additional_true_positives": 60,
+                "avoided_rule_false_positives": 0,
+                "missed_rule_true_positives": 0
+              },
+              "metrics": {
+                "false_positives_per_1000": 0.0,
+                "flagged": 174,
+                "fn": 0,
+                "fp": 0,
+                "fpr": 0.0,
+                "negatives": 3820,
+                "positives": 174,
+                "precision": 1.0,
+                "precision_ci_95": {
+                  "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                  "lower": 0.9783995315481122,
+                  "method": "Wilson score, 95%",
+                  "upper": 1.0
+                },
+                "recall": 1.0,
+                "tn": 3820,
+                "tp": 174
+              },
+              "per_pattern_recall": {
+                "ato": {
+                  "detected": 20,
+                  "positives": 20,
+                  "recall": 1.0
+                },
+                "farm": {
+                  "detected": 74,
+                  "positives": 74,
+                  "recall": 1.0
+                },
+                "quota": {
+                  "detected": 40,
+                  "positives": 40,
+                  "recall": 1.0
+                },
+                "spam_fanout": {
+                  "detected": 40,
+                  "positives": 40,
+                  "recall": 1.0
+                }
+              },
+              "precision_floor": 0.99,
+              "threshold": 0.9983214574200332
+            },
+            "throttle": {
+              "behavior_false_positives": {
+                "normal": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 3820
+                }
+              },
+              "calibration": {
+                "feasible": true,
+                "metrics": {
+                  "false_positives_per_1000": 0.0,
+                  "flagged": 175,
+                  "fn": 0,
+                  "fp": 0,
+                  "fpr": 0.0,
+                  "negatives": 3820,
+                  "positives": 175,
+                  "precision": 1.0,
+                  "precision_ci_95": {
+                    "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                    "lower": 0.9785203115316479,
+                    "method": "Wilson score, 95%",
+                    "upper": 1.0
+                  },
+                  "recall": 1.0,
+                  "tn": 3820,
+                  "tp": 175
+                },
+                "min_alerts": 5,
+                "reason": null
+              },
+              "incremental_vs_rules": {
+                "additional_false_positives": 0,
+                "additional_true_positives": 0,
+                "avoided_rule_false_positives": 0,
+                "missed_rule_true_positives": 0
+              },
+              "metrics": {
+                "false_positives_per_1000": 0.0,
+                "flagged": 174,
+                "fn": 0,
+                "fp": 0,
+                "fpr": 0.0,
+                "negatives": 3820,
+                "positives": 174,
+                "precision": 1.0,
+                "precision_ci_95": {
+                  "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                  "lower": 0.9783995315481122,
+                  "method": "Wilson score, 95%",
+                  "upper": 1.0
+                },
+                "recall": 1.0,
+                "tn": 3820,
+                "tp": 174
+              },
+              "per_pattern_recall": {
+                "ato": {
+                  "detected": 20,
+                  "positives": 20,
+                  "recall": 1.0
+                },
+                "farm": {
+                  "detected": 74,
+                  "positives": 74,
+                  "recall": 1.0
+                },
+                "quota": {
+                  "detected": 40,
+                  "positives": 40,
+                  "recall": 1.0
+                },
+                "spam_fanout": {
+                  "detected": 40,
+                  "positives": 40,
+                  "recall": 1.0
+                }
+              },
+              "precision_floor": 0.9,
+              "threshold": 0.9983214574200332
+            }
+          },
+          "validation_average_precision": 1.0
+        }
+      },
+      "n_test": 3994,
+      "n_train": 12011,
+      "n_validation": 3995,
+      "rules": {
+        "tiers": {
+          "suspend": {
+            "behavior_false_positives": {
+              "normal": {
+                "false_positive_rate": 0.0,
+                "false_positives": 0,
+                "negatives": 3820
+              }
+            },
+            "metrics": {
+              "false_positives_per_1000": 0.0,
+              "flagged": 114,
+              "fn": 60,
+              "fp": 0,
+              "fpr": 0.0,
+              "negatives": 3820,
+              "positives": 174,
+              "precision": 1.0,
+              "precision_ci_95": {
+                "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                "lower": 0.9674014658411585,
+                "method": "Wilson score, 95%",
+                "upper": 1.0
+              },
+              "recall": 0.6551724137931034,
+              "tn": 3820,
+              "tp": 114
+            },
+            "per_pattern_recall": {
+              "ato": {
+                "detected": 0,
+                "positives": 20,
+                "recall": 0.0
+              },
+              "farm": {
+                "detected": 74,
+                "positives": 74,
+                "recall": 1.0
+              },
+              "quota": {
+                "detected": 0,
+                "positives": 40,
+                "recall": 0.0
+              },
+              "spam_fanout": {
+                "detected": 40,
+                "positives": 40,
+                "recall": 1.0
+              }
+            }
+          },
+          "throttle": {
+            "behavior_false_positives": {
+              "normal": {
+                "false_positive_rate": 0.0,
+                "false_positives": 0,
+                "negatives": 3820
+              }
+            },
+            "metrics": {
+              "false_positives_per_1000": 0.0,
+              "flagged": 174,
+              "fn": 0,
+              "fp": 0,
+              "fpr": 0.0,
+              "negatives": 3820,
+              "positives": 174,
+              "precision": 1.0,
+              "precision_ci_95": {
+                "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                "lower": 0.9783995315481122,
+                "method": "Wilson score, 95%",
+                "upper": 1.0
+              },
+              "recall": 1.0,
+              "tn": 3820,
+              "tp": 174
+            },
+            "per_pattern_recall": {
+              "ato": {
+                "detected": 20,
+                "positives": 20,
+                "recall": 1.0
+              },
+              "farm": {
+                "detected": 74,
+                "positives": 74,
+                "recall": 1.0
+              },
+              "quota": {
+                "detected": 40,
+                "positives": 40,
+                "recall": 1.0
+              },
+              "spam_fanout": {
+                "detected": 40,
+                "positives": 40,
+                "recall": 1.0
+              }
+            }
+          }
+        }
+      },
+      "scenario": "baseline",
+      "schema_version": 2,
+      "seed": 17,
+      "selected_model": "hist_gradient_boosting",
+      "selection": {
+        "metric": "validation_average_precision",
+        "scores": {
+          "hist_gradient_boosting": 1.0,
+          "logistic_regression": 1.0
+        },
+        "tie_break": "alphabetical model name"
+      },
+      "source_sha256": "26e0b1376dd847d71880168739c27fdc4afe2d350d5310651da6204d724d11db",
+      "split_strategy": "synthetic label/behavior-stratified ASN/device groups, seeded group order, target 60/20/20; rare behaviors pooled within label"
+    },
+    {
+      "abuse_rate_test": 0.045238690327418146,
+      "as_of": 1781209600,
+      "config": {
+        "challenge_legitimate_fraction": 0.04,
+        "challenge_subtle_fraction": 0.5,
+        "days": 14,
+        "frac_ato": 0.005,
+        "frac_farm": 0.02,
+        "frac_quota": 0.01,
+        "frac_spam_fanout": 0.01,
+        "max_daily_events": 40,
+        "min_daily_events": 5,
+        "n_accounts": 20000,
+        "n_asns": 800,
+        "scenario": "baseline",
+        "seed": 29,
+        "start_ts": 1780000000
+      },
+      "counts": {
+        "accounts": 20000,
+        "ato": 100,
+        "events": 2975924,
+        "farm": 400,
+        "normal": 19100,
+        "quota": 200,
+        "spam_fanout": 200
+      },
+      "evaluation_scope": "retrospective synthetic accounts; no chronological holdout",
+      "min_alerts": 5,
+      "models": {
+        "hist_gradient_boosting": {
+          "average_precision": 0.9999999999999999,
+          "tiers": {
+            "suspend": {
+              "behavior_false_positives": {
+                "normal": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 3820
+                }
+              },
+              "calibration": {
+                "feasible": true,
+                "metrics": {
+                  "false_positives_per_1000": 0.2617801047120419,
+                  "flagged": 176,
+                  "fn": 0,
+                  "fp": 1,
+                  "fpr": 0.0002617801047120419,
+                  "negatives": 3820,
+                  "positives": 175,
+                  "precision": 0.9943181818181818,
+                  "precision_ci_95": {
+                    "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                    "lower": 0.9685225276336739,
+                    "method": "Wilson score, 95%",
+                    "upper": 0.9989963144675896
+                  },
+                  "recall": 1.0,
+                  "tn": 3819,
+                  "tp": 175
+                },
+                "min_alerts": 5,
+                "reason": null
+              },
+              "incremental_vs_rules": {
+                "additional_false_positives": 0,
+                "additional_true_positives": 60,
+                "avoided_rule_false_positives": 0,
+                "missed_rule_true_positives": 2
+              },
+              "metrics": {
+                "false_positives_per_1000": 0.0,
+                "flagged": 179,
+                "fn": 2,
+                "fp": 0,
+                "fpr": 0.0,
+                "negatives": 3820,
+                "positives": 181,
+                "precision": 1.0,
+                "precision_ci_95": {
+                  "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                  "lower": 0.978990220021919,
+                  "method": "Wilson score, 95%",
+                  "upper": 0.9999999999999999
+                },
+                "recall": 0.988950276243094,
+                "tn": 3820,
+                "tp": 179
+              },
+              "per_pattern_recall": {
+                "ato": {
+                  "detected": 20,
+                  "positives": 20,
+                  "recall": 1.0
+                },
+                "farm": {
+                  "detected": 79,
+                  "positives": 81,
+                  "recall": 0.9753086419753086
+                },
+                "quota": {
+                  "detected": 40,
+                  "positives": 40,
+                  "recall": 1.0
+                },
+                "spam_fanout": {
+                  "detected": 40,
+                  "positives": 40,
+                  "recall": 1.0
+                }
+              },
+              "precision_floor": 0.99,
+              "threshold": 0.9999248846078953
+            },
+            "throttle": {
+              "behavior_false_positives": {
+                "normal": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 3820
+                }
+              },
+              "calibration": {
+                "feasible": true,
+                "metrics": {
+                  "false_positives_per_1000": 0.2617801047120419,
+                  "flagged": 176,
+                  "fn": 0,
+                  "fp": 1,
+                  "fpr": 0.0002617801047120419,
+                  "negatives": 3820,
+                  "positives": 175,
+                  "precision": 0.9943181818181818,
+                  "precision_ci_95": {
+                    "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                    "lower": 0.9685225276336739,
+                    "method": "Wilson score, 95%",
+                    "upper": 0.9989963144675896
+                  },
+                  "recall": 1.0,
+                  "tn": 3819,
+                  "tp": 175
+                },
+                "min_alerts": 5,
+                "reason": null
+              },
+              "incremental_vs_rules": {
+                "additional_false_positives": 0,
+                "additional_true_positives": 0,
+                "avoided_rule_false_positives": 0,
+                "missed_rule_true_positives": 2
+              },
+              "metrics": {
+                "false_positives_per_1000": 0.0,
+                "flagged": 179,
+                "fn": 2,
+                "fp": 0,
+                "fpr": 0.0,
+                "negatives": 3820,
+                "positives": 181,
+                "precision": 1.0,
+                "precision_ci_95": {
+                  "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                  "lower": 0.978990220021919,
+                  "method": "Wilson score, 95%",
+                  "upper": 0.9999999999999999
+                },
+                "recall": 0.988950276243094,
+                "tn": 3820,
+                "tp": 179
+              },
+              "per_pattern_recall": {
+                "ato": {
+                  "detected": 20,
+                  "positives": 20,
+                  "recall": 1.0
+                },
+                "farm": {
+                  "detected": 79,
+                  "positives": 81,
+                  "recall": 0.9753086419753086
+                },
+                "quota": {
+                  "detected": 40,
+                  "positives": 40,
+                  "recall": 1.0
+                },
+                "spam_fanout": {
+                  "detected": 40,
+                  "positives": 40,
+                  "recall": 1.0
+                }
+              },
+              "precision_floor": 0.9,
+              "threshold": 0.9999248846078953
+            }
+          },
+          "validation_average_precision": 0.9929250313123511
+        },
+        "logistic_regression": {
+          "average_precision": 1.0,
+          "tiers": {
+            "suspend": {
+              "behavior_false_positives": {
+                "normal": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 3820
+                }
+              },
+              "calibration": {
+                "feasible": true,
+                "metrics": {
+                  "false_positives_per_1000": 0.0,
+                  "flagged": 175,
+                  "fn": 0,
+                  "fp": 0,
+                  "fpr": 0.0,
+                  "negatives": 3820,
+                  "positives": 175,
+                  "precision": 1.0,
+                  "precision_ci_95": {
+                    "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                    "lower": 0.9785203115316479,
+                    "method": "Wilson score, 95%",
+                    "upper": 1.0
+                  },
+                  "recall": 1.0,
+                  "tn": 3820,
+                  "tp": 175
+                },
+                "min_alerts": 5,
+                "reason": null
+              },
+              "incremental_vs_rules": {
+                "additional_false_positives": 0,
+                "additional_true_positives": 60,
+                "avoided_rule_false_positives": 0,
+                "missed_rule_true_positives": 0
+              },
+              "metrics": {
+                "false_positives_per_1000": 0.0,
+                "flagged": 181,
+                "fn": 0,
+                "fp": 0,
+                "fpr": 0.0,
+                "negatives": 3820,
+                "positives": 181,
+                "precision": 1.0,
+                "precision_ci_95": {
+                  "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                  "lower": 0.979217547593473,
+                  "method": "Wilson score, 95%",
+                  "upper": 1.0
+                },
+                "recall": 1.0,
+                "tn": 3820,
+                "tp": 181
+              },
+              "per_pattern_recall": {
+                "ato": {
+                  "detected": 20,
+                  "positives": 20,
+                  "recall": 1.0
+                },
+                "farm": {
+                  "detected": 81,
+                  "positives": 81,
+                  "recall": 1.0
+                },
+                "quota": {
+                  "detected": 40,
+                  "positives": 40,
+                  "recall": 1.0
+                },
+                "spam_fanout": {
+                  "detected": 40,
+                  "positives": 40,
+                  "recall": 1.0
+                }
+              },
+              "precision_floor": 0.99,
+              "threshold": 0.9774430785446727
+            },
+            "throttle": {
+              "behavior_false_positives": {
+                "normal": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 3820
+                }
+              },
+              "calibration": {
+                "feasible": true,
+                "metrics": {
+                  "false_positives_per_1000": 0.0,
+                  "flagged": 175,
+                  "fn": 0,
+                  "fp": 0,
+                  "fpr": 0.0,
+                  "negatives": 3820,
+                  "positives": 175,
+                  "precision": 1.0,
+                  "precision_ci_95": {
+                    "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                    "lower": 0.9785203115316479,
+                    "method": "Wilson score, 95%",
+                    "upper": 1.0
+                  },
+                  "recall": 1.0,
+                  "tn": 3820,
+                  "tp": 175
+                },
+                "min_alerts": 5,
+                "reason": null
+              },
+              "incremental_vs_rules": {
+                "additional_false_positives": 0,
+                "additional_true_positives": 0,
+                "avoided_rule_false_positives": 0,
+                "missed_rule_true_positives": 0
+              },
+              "metrics": {
+                "false_positives_per_1000": 0.0,
+                "flagged": 181,
+                "fn": 0,
+                "fp": 0,
+                "fpr": 0.0,
+                "negatives": 3820,
+                "positives": 181,
+                "precision": 1.0,
+                "precision_ci_95": {
+                  "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                  "lower": 0.979217547593473,
+                  "method": "Wilson score, 95%",
+                  "upper": 1.0
+                },
+                "recall": 1.0,
+                "tn": 3820,
+                "tp": 181
+              },
+              "per_pattern_recall": {
+                "ato": {
+                  "detected": 20,
+                  "positives": 20,
+                  "recall": 1.0
+                },
+                "farm": {
+                  "detected": 81,
+                  "positives": 81,
+                  "recall": 1.0
+                },
+                "quota": {
+                  "detected": 40,
+                  "positives": 40,
+                  "recall": 1.0
+                },
+                "spam_fanout": {
+                  "detected": 40,
+                  "positives": 40,
+                  "recall": 1.0
+                }
+              },
+              "precision_floor": 0.9,
+              "threshold": 0.9774430785446727
+            }
+          },
+          "validation_average_precision": 1.0
+        }
+      },
+      "n_test": 4001,
+      "n_train": 12004,
+      "n_validation": 3995,
+      "rules": {
+        "tiers": {
+          "suspend": {
+            "behavior_false_positives": {
+              "normal": {
+                "false_positive_rate": 0.0,
+                "false_positives": 0,
+                "negatives": 3820
+              }
+            },
+            "metrics": {
+              "false_positives_per_1000": 0.0,
+              "flagged": 121,
+              "fn": 60,
+              "fp": 0,
+              "fpr": 0.0,
+              "negatives": 3820,
+              "positives": 181,
+              "precision": 1.0,
+              "precision_ci_95": {
+                "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                "lower": 0.9692293020525218,
+                "method": "Wilson score, 95%",
+                "upper": 1.0
+              },
+              "recall": 0.6685082872928176,
+              "tn": 3820,
+              "tp": 121
+            },
+            "per_pattern_recall": {
+              "ato": {
+                "detected": 0,
+                "positives": 20,
+                "recall": 0.0
+              },
+              "farm": {
+                "detected": 81,
+                "positives": 81,
+                "recall": 1.0
+              },
+              "quota": {
+                "detected": 0,
+                "positives": 40,
+                "recall": 0.0
+              },
+              "spam_fanout": {
+                "detected": 40,
+                "positives": 40,
+                "recall": 1.0
+              }
+            }
+          },
+          "throttle": {
+            "behavior_false_positives": {
+              "normal": {
+                "false_positive_rate": 0.0,
+                "false_positives": 0,
+                "negatives": 3820
+              }
+            },
+            "metrics": {
+              "false_positives_per_1000": 0.0,
+              "flagged": 181,
+              "fn": 0,
+              "fp": 0,
+              "fpr": 0.0,
+              "negatives": 3820,
+              "positives": 181,
+              "precision": 1.0,
+              "precision_ci_95": {
+                "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                "lower": 0.979217547593473,
+                "method": "Wilson score, 95%",
+                "upper": 1.0
+              },
+              "recall": 1.0,
+              "tn": 3820,
+              "tp": 181
+            },
+            "per_pattern_recall": {
+              "ato": {
+                "detected": 20,
+                "positives": 20,
+                "recall": 1.0
+              },
+              "farm": {
+                "detected": 81,
+                "positives": 81,
+                "recall": 1.0
+              },
+              "quota": {
+                "detected": 40,
+                "positives": 40,
+                "recall": 1.0
+              },
+              "spam_fanout": {
+                "detected": 40,
+                "positives": 40,
+                "recall": 1.0
+              }
+            }
+          }
+        }
+      },
+      "scenario": "baseline",
+      "schema_version": 2,
+      "seed": 29,
+      "selected_model": "logistic_regression",
+      "selection": {
+        "metric": "validation_average_precision",
+        "scores": {
+          "hist_gradient_boosting": 0.9929250313123511,
+          "logistic_regression": 1.0
+        },
+        "tie_break": "alphabetical model name"
+      },
+      "source_sha256": "26e0b1376dd847d71880168739c27fdc4afe2d350d5310651da6204d724d11db",
+      "split_strategy": "synthetic label/behavior-stratified ASN/device groups, seeded group order, target 60/20/20; rare behaviors pooled within label"
+    },
+    {
+      "abuse_rate_test": 0.04547726136931534,
+      "as_of": 1781209600,
+      "config": {
+        "challenge_legitimate_fraction": 0.04,
+        "challenge_subtle_fraction": 0.5,
+        "days": 14,
+        "frac_ato": 0.005,
+        "frac_farm": 0.02,
+        "frac_quota": 0.01,
+        "frac_spam_fanout": 0.01,
+        "max_daily_events": 40,
+        "min_daily_events": 5,
+        "n_accounts": 20000,
+        "n_asns": 800,
+        "scenario": "challenge",
+        "seed": 7,
+        "start_ts": 1780000000
+      },
+      "counts": {
+        "accounts": 20000,
+        "ato": 100,
+        "events": 3850722,
+        "farm": 400,
+        "normal": 19100,
+        "quota": 200,
+        "spam_fanout": 200
+      },
+      "evaluation_scope": "retrospective synthetic accounts; no chronological holdout",
+      "min_alerts": 5,
+      "models": {
+        "hist_gradient_boosting": {
+          "average_precision": 0.9909035191341489,
+          "tiers": {
+            "suspend": {
+              "behavior_false_positives": {
+                "legitimate_broadcast": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 153
+                },
+                "legitimate_bursty_api": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 153
+                },
+                "legitimate_returning": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 153
+                },
+                "legitimate_shared_device": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 152
+                },
+                "normal": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 3209
+                }
+              },
+              "calibration": {
+                "feasible": true,
+                "metrics": {
+                  "false_positives_per_1000": 0.2616431187859759,
+                  "flagged": 165,
+                  "fn": 16,
+                  "fp": 1,
+                  "fpr": 0.00026164311878597594,
+                  "negatives": 3822,
+                  "positives": 180,
+                  "precision": 0.9939393939393939,
+                  "precision_ci_95": {
+                    "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                    "lower": 0.9664733468308118,
+                    "method": "Wilson score, 95%",
+                    "upper": 0.9989293518813713
+                  },
+                  "recall": 0.9111111111111111,
+                  "tn": 3821,
+                  "tp": 164
+                },
+                "min_alerts": 5,
+                "reason": null
+              },
+              "incremental_vs_rules": {
+                "additional_false_positives": 0,
+                "additional_true_positives": 103,
+                "avoided_rule_false_positives": 85,
+                "missed_rule_true_positives": 2
+              },
+              "metrics": {
+                "false_positives_per_1000": 0.0,
+                "flagged": 164,
+                "fn": 18,
+                "fp": 0,
+                "fpr": 0.0,
+                "negatives": 3820,
+                "positives": 182,
+                "precision": 1.0,
+                "precision_ci_95": {
+                  "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                  "lower": 0.9771125748805723,
+                  "method": "Wilson score, 95%",
+                  "upper": 0.9999999999999999
+                },
+                "recall": 0.9010989010989011,
+                "tn": 3820,
+                "tp": 164
+              },
+              "per_pattern_recall": {
+                "ato": {
+                  "detected": 9,
+                  "positives": 20,
+                  "recall": 0.45
+                },
+                "farm": {
+                  "detected": 76,
+                  "positives": 82,
+                  "recall": 0.926829268292683
+                },
+                "quota": {
+                  "detected": 39,
+                  "positives": 40,
+                  "recall": 0.975
+                },
+                "spam_fanout": {
+                  "detected": 40,
+                  "positives": 40,
+                  "recall": 1.0
+                }
+              },
+              "precision_floor": 0.99,
+              "threshold": 0.9790068310534255
+            },
+            "throttle": {
+              "behavior_false_positives": {
+                "legitimate_broadcast": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 153
+                },
+                "legitimate_bursty_api": {
+                  "false_positive_rate": 0.006535947712418301,
+                  "false_positives": 1,
+                  "negatives": 153
+                },
+                "legitimate_returning": {
+                  "false_positive_rate": 0.058823529411764705,
+                  "false_positives": 9,
+                  "negatives": 153
+                },
+                "legitimate_shared_device": {
+                  "false_positive_rate": 0.013157894736842105,
+                  "false_positives": 2,
+                  "negatives": 152
+                },
+                "normal": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 3209
+                }
+              },
+              "calibration": {
+                "feasible": true,
+                "metrics": {
+                  "false_positives_per_1000": 2.3547880690737832,
+                  "flagged": 184,
+                  "fn": 5,
+                  "fp": 9,
+                  "fpr": 0.002354788069073783,
+                  "negatives": 3822,
+                  "positives": 180,
+                  "precision": 0.9510869565217391,
+                  "precision_ci_95": {
+                    "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                    "lower": 0.9096677238294343,
+                    "method": "Wilson score, 95%",
+                    "upper": 0.9740562476632323
+                  },
+                  "recall": 0.9722222222222222,
+                  "tn": 3813,
+                  "tp": 175
+                },
+                "min_alerts": 5,
+                "reason": null
+              },
+              "incremental_vs_rules": {
+                "additional_false_positives": 1,
+                "additional_true_positives": 87,
+                "avoided_rule_false_positives": 347,
+                "missed_rule_true_positives": 8
+              },
+              "metrics": {
+                "false_positives_per_1000": 3.141361256544503,
+                "flagged": 186,
+                "fn": 8,
+                "fp": 12,
+                "fpr": 0.0031413612565445027,
+                "negatives": 3820,
+                "positives": 182,
+                "precision": 0.9354838709677419,
+                "precision_ci_95": {
+                  "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                  "lower": 0.8906313278648095,
+                  "method": "Wilson score, 95%",
+                  "upper": 0.9627123042709376
+                },
+                "recall": 0.9560439560439561,
+                "tn": 3808,
+                "tp": 174
+              },
+              "per_pattern_recall": {
+                "ato": {
+                  "detected": 12,
+                  "positives": 20,
+                  "recall": 0.6
+                },
+                "farm": {
+                  "detected": 82,
+                  "positives": 82,
+                  "recall": 1.0
+                },
+                "quota": {
+                  "detected": 40,
+                  "positives": 40,
+                  "recall": 1.0
+                },
+                "spam_fanout": {
+                  "detected": 40,
+                  "positives": 40,
+                  "recall": 1.0
+                }
+              },
+              "precision_floor": 0.9,
+              "threshold": 0.15606330240292643
+            }
+          },
+          "validation_average_precision": 0.9845118081691553
+        },
+        "logistic_regression": {
+          "average_precision": 0.9059947536587479,
+          "tiers": {
+            "suspend": {
+              "behavior_false_positives": {
+                "legitimate_broadcast": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 153
+                },
+                "legitimate_bursty_api": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 153
+                },
+                "legitimate_returning": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 153
+                },
+                "legitimate_shared_device": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 152
+                },
+                "normal": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 3209
+                }
+              },
+              "calibration": {
+                "feasible": true,
+                "metrics": {
+                  "false_positives_per_1000": 0.0,
+                  "flagged": 22,
+                  "fn": 158,
+                  "fp": 0,
+                  "fpr": 0.0,
+                  "negatives": 3822,
+                  "positives": 180,
+                  "precision": 1.0,
+                  "precision_ci_95": {
+                    "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                    "lower": 0.8513451253913791,
+                    "method": "Wilson score, 95%",
+                    "upper": 1.0
+                  },
+                  "recall": 0.12222222222222222,
+                  "tn": 3822,
+                  "tp": 22
+                },
+                "min_alerts": 5,
+                "reason": null
+              },
+              "incremental_vs_rules": {
+                "additional_false_positives": 0,
+                "additional_true_positives": 20,
+                "avoided_rule_false_positives": 85,
+                "missed_rule_true_positives": 63
+              },
+              "metrics": {
+                "false_positives_per_1000": 0.0,
+                "flagged": 20,
+                "fn": 162,
+                "fp": 0,
+                "fpr": 0.0,
+                "negatives": 3820,
+                "positives": 182,
+                "precision": 1.0,
+                "precision_ci_95": {
+                  "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                  "lower": 0.8388748419471806,
+                  "method": "Wilson score, 95%",
+                  "upper": 1.0
+                },
+                "recall": 0.10989010989010989,
+                "tn": 3820,
+                "tp": 20
+              },
+              "per_pattern_recall": {
+                "ato": {
+                  "detected": 0,
+                  "positives": 20,
+                  "recall": 0.0
+                },
+                "farm": {
+                  "detected": 0,
+                  "positives": 82,
+                  "recall": 0.0
+                },
+                "quota": {
+                  "detected": 0,
+                  "positives": 40,
+                  "recall": 0.0
+                },
+                "spam_fanout": {
+                  "detected": 20,
+                  "positives": 40,
+                  "recall": 0.5
+                }
+              },
+              "precision_floor": 0.99,
+              "threshold": 0.999997775587687
+            },
+            "throttle": {
+              "behavior_false_positives": {
+                "legitimate_broadcast": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 153
+                },
+                "legitimate_bursty_api": {
+                  "false_positive_rate": 0.013071895424836602,
+                  "false_positives": 2,
+                  "negatives": 153
+                },
+                "legitimate_returning": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 153
+                },
+                "legitimate_shared_device": {
+                  "false_positive_rate": 0.006578947368421052,
+                  "false_positives": 1,
+                  "negatives": 152
+                },
+                "normal": {
+                  "false_positive_rate": 0.0003116235587410408,
+                  "false_positives": 1,
+                  "negatives": 3209
+                }
+              },
+              "calibration": {
+                "feasible": true,
+                "metrics": {
+                  "false_positives_per_1000": 2.6164311878597593,
+                  "flagged": 118,
+                  "fn": 72,
+                  "fp": 10,
+                  "fpr": 0.0026164311878597592,
+                  "negatives": 3822,
+                  "positives": 180,
+                  "precision": 0.9152542372881356,
+                  "precision_ci_95": {
+                    "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                    "lower": 0.8510066169479545,
+                    "method": "Wilson score, 95%",
+                    "upper": 0.9533173048808213
+                  },
+                  "recall": 0.6,
+                  "tn": 3812,
+                  "tp": 108
+                },
+                "min_alerts": 5,
+                "reason": null
+              },
+              "incremental_vs_rules": {
+                "additional_false_positives": 1,
+                "additional_true_positives": 37,
+                "avoided_rule_false_positives": 355,
+                "missed_rule_true_positives": 14
+              },
+              "metrics": {
+                "false_positives_per_1000": 1.0471204188481675,
+                "flagged": 122,
+                "fn": 64,
+                "fp": 4,
+                "fpr": 0.0010471204188481676,
+                "negatives": 3820,
+                "positives": 182,
+                "precision": 0.9672131147540983,
+                "precision_ci_95": {
+                  "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                  "lower": 0.9187243662061949,
+                  "method": "Wilson score, 95%",
+                  "upper": 0.987177401528662
+                },
+                "recall": 0.6483516483516484,
+                "tn": 3816,
+                "tp": 118
+              },
+              "per_pattern_recall": {
+                "ato": {
+                  "detected": 4,
+                  "positives": 20,
+                  "recall": 0.2
+                },
+                "farm": {
+                  "detected": 43,
+                  "positives": 82,
+                  "recall": 0.524390243902439
+                },
+                "quota": {
+                  "detected": 35,
+                  "positives": 40,
+                  "recall": 0.875
+                },
+                "spam_fanout": {
+                  "detected": 36,
+                  "positives": 40,
+                  "recall": 0.9
+                }
+              },
+              "precision_floor": 0.9,
+              "threshold": 0.9514948576789533
+            }
+          },
+          "validation_average_precision": 0.8453837863618118
+        }
+      },
+      "n_test": 4002,
+      "n_train": 11996,
+      "n_validation": 4002,
+      "rules": {
+        "tiers": {
+          "suspend": {
+            "behavior_false_positives": {
+              "legitimate_broadcast": {
+                "false_positive_rate": 0.09803921568627451,
+                "false_positives": 15,
+                "negatives": 153
+              },
+              "legitimate_bursty_api": {
+                "false_positive_rate": 0.0,
+                "false_positives": 0,
+                "negatives": 153
+              },
+              "legitimate_returning": {
+                "false_positive_rate": 0.0,
+                "false_positives": 0,
+                "negatives": 153
+              },
+              "legitimate_shared_device": {
+                "false_positive_rate": 0.4605263157894737,
+                "false_positives": 70,
+                "negatives": 152
+              },
+              "normal": {
+                "false_positive_rate": 0.0,
+                "false_positives": 0,
+                "negatives": 3209
+              }
+            },
+            "metrics": {
+              "false_positives_per_1000": 22.25130890052356,
+              "flagged": 148,
+              "fn": 119,
+              "fp": 85,
+              "fpr": 0.02225130890052356,
+              "negatives": 3820,
+              "positives": 182,
+              "precision": 0.42567567567567566,
+              "precision_ci_95": {
+                "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                "lower": 0.3488885757698126,
+                "method": "Wilson score, 95%",
+                "upper": 0.5062234590402633
+              },
+              "recall": 0.34615384615384615,
+              "tn": 3735,
+              "tp": 63
+            },
+            "per_pattern_recall": {
+              "ato": {
+                "detected": 0,
+                "positives": 20,
+                "recall": 0.0
+              },
+              "farm": {
+                "detected": 43,
+                "positives": 82,
+                "recall": 0.524390243902439
+              },
+              "quota": {
+                "detected": 0,
+                "positives": 40,
+                "recall": 0.0
+              },
+              "spam_fanout": {
+                "detected": 20,
+                "positives": 40,
+                "recall": 0.5
+              }
+            }
+          },
+          "throttle": {
+            "behavior_false_positives": {
+              "legitimate_broadcast": {
+                "false_positive_rate": 0.09803921568627451,
+                "false_positives": 15,
+                "negatives": 153
+              },
+              "legitimate_bursty_api": {
+                "false_positive_rate": 0.9607843137254902,
+                "false_positives": 147,
+                "negatives": 153
+              },
+              "legitimate_returning": {
+                "false_positive_rate": 0.8235294117647058,
+                "false_positives": 126,
+                "negatives": 153
+              },
+              "legitimate_shared_device": {
+                "false_positive_rate": 0.4605263157894737,
+                "false_positives": 70,
+                "negatives": 152
+              },
+              "normal": {
+                "false_positive_rate": 0.0,
+                "false_positives": 0,
+                "negatives": 3209
+              }
+            },
+            "metrics": {
+              "false_positives_per_1000": 93.717277486911,
+              "flagged": 453,
+              "fn": 87,
+              "fp": 358,
+              "fpr": 0.093717277486911,
+              "negatives": 3820,
+              "positives": 182,
+              "precision": 0.2097130242825607,
+              "precision_ci_95": {
+                "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                "lower": 0.17474318223863755,
+                "method": "Wilson score, 95%",
+                "upper": 0.2495647589037513
+              },
+              "recall": 0.521978021978022,
+              "tn": 3462,
+              "tp": 95
+            },
+            "per_pattern_recall": {
+              "ato": {
+                "detected": 10,
+                "positives": 20,
+                "recall": 0.5
+              },
+              "farm": {
+                "detected": 43,
+                "positives": 82,
+                "recall": 0.524390243902439
+              },
+              "quota": {
+                "detected": 22,
+                "positives": 40,
+                "recall": 0.55
+              },
+              "spam_fanout": {
+                "detected": 20,
+                "positives": 40,
+                "recall": 0.5
+              }
+            }
+          }
+        }
+      },
+      "scenario": "challenge",
+      "schema_version": 2,
+      "seed": 7,
+      "selected_model": "hist_gradient_boosting",
+      "selection": {
+        "metric": "validation_average_precision",
+        "scores": {
+          "hist_gradient_boosting": 0.9845118081691553,
+          "logistic_regression": 0.8453837863618118
+        },
+        "tie_break": "alphabetical model name"
+      },
+      "source_sha256": "26e0b1376dd847d71880168739c27fdc4afe2d350d5310651da6204d724d11db",
+      "split_strategy": "synthetic label/behavior-stratified ASN/device groups, seeded group order, target 60/20/20; rare behaviors pooled within label"
+    },
+    {
+      "abuse_rate_test": 0.045692883895131084,
+      "as_of": 1781209600,
+      "config": {
+        "challenge_legitimate_fraction": 0.04,
+        "challenge_subtle_fraction": 0.5,
+        "days": 14,
+        "frac_ato": 0.005,
+        "frac_farm": 0.02,
+        "frac_quota": 0.01,
+        "frac_spam_fanout": 0.01,
+        "max_daily_events": 40,
+        "min_daily_events": 5,
+        "n_accounts": 20000,
+        "n_asns": 800,
+        "scenario": "challenge",
+        "seed": 17,
+        "start_ts": 1780000000
+      },
+      "counts": {
+        "accounts": 20000,
+        "ato": 100,
+        "events": 3914322,
+        "farm": 400,
+        "normal": 19100,
+        "quota": 200,
+        "spam_fanout": 200
+      },
+      "evaluation_scope": "retrospective synthetic accounts; no chronological holdout",
+      "min_alerts": 5,
+      "models": {
+        "hist_gradient_boosting": {
+          "average_precision": 0.980587939331317,
+          "tiers": {
+            "suspend": {
+              "behavior_false_positives": {
+                "legitimate_broadcast": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 153
+                },
+                "legitimate_bursty_api": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 153
+                },
+                "legitimate_returning": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 153
+                },
+                "legitimate_shared_device": {
+                  "false_positive_rate": 0.012987012987012988,
+                  "false_positives": 2,
+                  "negatives": 154
+                },
+                "normal": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 3209
+                }
+              },
+              "calibration": {
+                "feasible": true,
+                "metrics": {
+                  "false_positives_per_1000": 0.0,
+                  "flagged": 169,
+                  "fn": 7,
+                  "fp": 0,
+                  "fpr": 0.0,
+                  "negatives": 3818,
+                  "positives": 176,
+                  "precision": 1.0,
+                  "precision_ci_95": {
+                    "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                    "lower": 0.9777746679129846,
+                    "method": "Wilson score, 95%",
+                    "upper": 1.0
+                  },
+                  "recall": 0.9602272727272727,
+                  "tn": 3818,
+                  "tp": 169
+                },
+                "min_alerts": 5,
+                "reason": null
+              },
+              "incremental_vs_rules": {
+                "additional_false_positives": 1,
+                "additional_true_positives": 110,
+                "avoided_rule_false_positives": 112,
+                "missed_rule_true_positives": 3
+              },
+              "metrics": {
+                "false_positives_per_1000": 0.5232862375719518,
+                "flagged": 172,
+                "fn": 13,
+                "fp": 2,
+                "fpr": 0.0005232862375719519,
+                "negatives": 3822,
+                "positives": 183,
+                "precision": 0.9883720930232558,
+                "precision_ci_95": {
+                  "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                  "lower": 0.958600691496456,
+                  "method": "Wilson score, 95%",
+                  "upper": 0.9968053949106748
+                },
+                "recall": 0.9289617486338798,
+                "tn": 3820,
+                "tp": 170
+              },
+              "per_pattern_recall": {
+                "ato": {
+                  "detected": 11,
+                  "positives": 20,
+                  "recall": 0.55
+                },
+                "farm": {
+                  "detected": 80,
+                  "positives": 83,
+                  "recall": 0.963855421686747
+                },
+                "quota": {
+                  "detected": 39,
+                  "positives": 40,
+                  "recall": 0.975
+                },
+                "spam_fanout": {
+                  "detected": 40,
+                  "positives": 40,
+                  "recall": 1.0
+                }
+              },
+              "precision_floor": 0.99,
+              "threshold": 0.9811587514458259
+            },
+            "throttle": {
+              "behavior_false_positives": {
+                "legitimate_broadcast": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 153
+                },
+                "legitimate_bursty_api": {
+                  "false_positive_rate": 0.006535947712418301,
+                  "false_positives": 1,
+                  "negatives": 153
+                },
+                "legitimate_returning": {
+                  "false_positive_rate": 0.0784313725490196,
+                  "false_positives": 12,
+                  "negatives": 153
+                },
+                "legitimate_shared_device": {
+                  "false_positive_rate": 0.012987012987012988,
+                  "false_positives": 2,
+                  "negatives": 154
+                },
+                "normal": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 3209
+                }
+              },
+              "calibration": {
+                "feasible": true,
+                "metrics": {
+                  "false_positives_per_1000": 2.6191723415400734,
+                  "flagged": 182,
+                  "fn": 4,
+                  "fp": 10,
+                  "fpr": 0.0026191723415400735,
+                  "negatives": 3818,
+                  "positives": 176,
+                  "precision": 0.945054945054945,
+                  "precision_ci_95": {
+                    "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                    "lower": 0.9018263245828161,
+                    "method": "Wilson score, 95%",
+                    "upper": 0.9698844391402716
+                  },
+                  "recall": 0.9772727272727273,
+                  "tn": 3808,
+                  "tp": 172
+                },
+                "min_alerts": 5,
+                "reason": null
+              },
+              "incremental_vs_rules": {
+                "additional_false_positives": 1,
+                "additional_true_positives": 90,
+                "avoided_rule_false_positives": 380,
+                "missed_rule_true_positives": 9
+              },
+              "metrics": {
+                "false_positives_per_1000": 3.924646781789639,
+                "flagged": 189,
+                "fn": 9,
+                "fp": 15,
+                "fpr": 0.003924646781789639,
+                "negatives": 3822,
+                "positives": 183,
+                "precision": 0.9206349206349206,
+                "precision_ci_95": {
+                  "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                  "lower": 0.8731953842935405,
+                  "method": "Wilson score, 95%",
+                  "upper": 0.9513161132462067
+                },
+                "recall": 0.9508196721311475,
+                "tn": 3807,
+                "tp": 174
+              },
+              "per_pattern_recall": {
+                "ato": {
+                  "detected": 12,
+                  "positives": 20,
+                  "recall": 0.6
+                },
+                "farm": {
+                  "detected": 82,
+                  "positives": 83,
+                  "recall": 0.9879518072289156
+                },
+                "quota": {
+                  "detected": 40,
+                  "positives": 40,
+                  "recall": 1.0
+                },
+                "spam_fanout": {
+                  "detected": 40,
+                  "positives": 40,
+                  "recall": 1.0
+                }
+              },
+              "precision_floor": 0.9,
+              "threshold": 0.09543803982894111
+            }
+          },
+          "validation_average_precision": 0.9939967455617961
+        },
+        "logistic_regression": {
+          "average_precision": 0.8674790861852014,
+          "tiers": {
+            "suspend": {
+              "behavior_false_positives": {
+                "legitimate_broadcast": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 153
+                },
+                "legitimate_bursty_api": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 153
+                },
+                "legitimate_returning": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 153
+                },
+                "legitimate_shared_device": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 154
+                },
+                "normal": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 3209
+                }
+              },
+              "calibration": {
+                "feasible": true,
+                "metrics": {
+                  "false_positives_per_1000": 0.0,
+                  "flagged": 41,
+                  "fn": 135,
+                  "fp": 0,
+                  "fpr": 0.0,
+                  "negatives": 3818,
+                  "positives": 176,
+                  "precision": 1.0,
+                  "precision_ci_95": {
+                    "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                    "lower": 0.9143324298155681,
+                    "method": "Wilson score, 95%",
+                    "upper": 0.9999999999999999
+                  },
+                  "recall": 0.23295454545454544,
+                  "tn": 3818,
+                  "tp": 41
+                },
+                "min_alerts": 5,
+                "reason": null
+              },
+              "incremental_vs_rules": {
+                "additional_false_positives": 0,
+                "additional_true_positives": 29,
+                "avoided_rule_false_positives": 113,
+                "missed_rule_true_positives": 59
+              },
+              "metrics": {
+                "false_positives_per_1000": 0.0,
+                "flagged": 33,
+                "fn": 150,
+                "fp": 0,
+                "fpr": 0.0,
+                "negatives": 3822,
+                "positives": 183,
+                "precision": 1.0,
+                "precision_ci_95": {
+                  "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                  "lower": 0.895730002457548,
+                  "method": "Wilson score, 95%",
+                  "upper": 1.0
+                },
+                "recall": 0.18032786885245902,
+                "tn": 3822,
+                "tp": 33
+              },
+              "per_pattern_recall": {
+                "ato": {
+                  "detected": 0,
+                  "positives": 20,
+                  "recall": 0.0
+                },
+                "farm": {
+                  "detected": 0,
+                  "positives": 83,
+                  "recall": 0.0
+                },
+                "quota": {
+                  "detected": 9,
+                  "positives": 40,
+                  "recall": 0.225
+                },
+                "spam_fanout": {
+                  "detected": 24,
+                  "positives": 40,
+                  "recall": 0.6
+                }
+              },
+              "precision_floor": 0.99,
+              "threshold": 0.9997497505790084
+            },
+            "throttle": {
+              "behavior_false_positives": {
+                "legitimate_broadcast": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 153
+                },
+                "legitimate_bursty_api": {
+                  "false_positive_rate": 0.006535947712418301,
+                  "false_positives": 1,
+                  "negatives": 153
+                },
+                "legitimate_returning": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 153
+                },
+                "legitimate_shared_device": {
+                  "false_positive_rate": 0.045454545454545456,
+                  "false_positives": 7,
+                  "negatives": 154
+                },
+                "normal": {
+                  "false_positive_rate": 0.001869741352446245,
+                  "false_positives": 6,
+                  "negatives": 3209
+                }
+              },
+              "calibration": {
+                "feasible": true,
+                "metrics": {
+                  "false_positives_per_1000": 1.8334206390780514,
+                  "flagged": 120,
+                  "fn": 63,
+                  "fp": 7,
+                  "fpr": 0.0018334206390780514,
+                  "negatives": 3818,
+                  "positives": 176,
+                  "precision": 0.9416666666666667,
+                  "precision_ci_95": {
+                    "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                    "lower": 0.8844740796636988,
+                    "method": "Wilson score, 95%",
+                    "upper": 0.9714589899997798
+                  },
+                  "recall": 0.6420454545454546,
+                  "tn": 3811,
+                  "tp": 113
+                },
+                "min_alerts": 5,
+                "reason": null
+              },
+              "incremental_vs_rules": {
+                "additional_false_positives": 7,
+                "additional_true_positives": 40,
+                "avoided_rule_false_positives": 387,
+                "missed_rule_true_positives": 18
+              },
+              "metrics": {
+                "false_positives_per_1000": 3.663003663003663,
+                "flagged": 129,
+                "fn": 68,
+                "fp": 14,
+                "fpr": 0.003663003663003663,
+                "negatives": 3822,
+                "positives": 183,
+                "precision": 0.8914728682170543,
+                "precision_ci_95": {
+                  "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                  "lower": 0.8260607830534078,
+                  "method": "Wilson score, 95%",
+                  "upper": 0.9342440261276411
+                },
+                "recall": 0.6284153005464481,
+                "tn": 3808,
+                "tp": 115
+              },
+              "per_pattern_recall": {
+                "ato": {
+                  "detected": 2,
+                  "positives": 20,
+                  "recall": 0.1
+                },
+                "farm": {
+                  "detected": 38,
+                  "positives": 83,
+                  "recall": 0.4578313253012048
+                },
+                "quota": {
+                  "detected": 37,
+                  "positives": 40,
+                  "recall": 0.925
+                },
+                "spam_fanout": {
+                  "detected": 38,
+                  "positives": 40,
+                  "recall": 0.95
+                }
+              },
+              "precision_floor": 0.9,
+              "threshold": 0.909345033143392
+            }
+          },
+          "validation_average_precision": 0.8757545103300144
+        }
+      },
+      "n_test": 4005,
+      "n_train": 12001,
+      "n_validation": 3994,
+      "rules": {
+        "tiers": {
+          "suspend": {
+            "behavior_false_positives": {
+              "legitimate_broadcast": {
+                "false_positive_rate": 0.058823529411764705,
+                "false_positives": 9,
+                "negatives": 153
+              },
+              "legitimate_bursty_api": {
+                "false_positive_rate": 0.0,
+                "false_positives": 0,
+                "negatives": 153
+              },
+              "legitimate_returning": {
+                "false_positive_rate": 0.0,
+                "false_positives": 0,
+                "negatives": 153
+              },
+              "legitimate_shared_device": {
+                "false_positive_rate": 0.6753246753246753,
+                "false_positives": 104,
+                "negatives": 154
+              },
+              "normal": {
+                "false_positive_rate": 0.0,
+                "false_positives": 0,
+                "negatives": 3209
+              }
+            },
+            "metrics": {
+              "false_positives_per_1000": 29.56567242281528,
+              "flagged": 176,
+              "fn": 120,
+              "fp": 113,
+              "fpr": 0.02956567242281528,
+              "negatives": 3822,
+              "positives": 183,
+              "precision": 0.35795454545454547,
+              "precision_ci_95": {
+                "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                "lower": 0.2908581870051659,
+                "method": "Wilson score, 95%",
+                "upper": 0.4311191572186091
+              },
+              "recall": 0.3442622950819672,
+              "tn": 3709,
+              "tp": 63
+            },
+            "per_pattern_recall": {
+              "ato": {
+                "detected": 0,
+                "positives": 20,
+                "recall": 0.0
+              },
+              "farm": {
+                "detected": 43,
+                "positives": 83,
+                "recall": 0.5180722891566265
+              },
+              "quota": {
+                "detected": 0,
+                "positives": 40,
+                "recall": 0.0
+              },
+              "spam_fanout": {
+                "detected": 20,
+                "positives": 40,
+                "recall": 0.5
+              }
+            }
+          },
+          "throttle": {
+            "behavior_false_positives": {
+              "legitimate_broadcast": {
+                "false_positive_rate": 0.058823529411764705,
+                "false_positives": 9,
+                "negatives": 153
+              },
+              "legitimate_bursty_api": {
+                "false_positive_rate": 0.9607843137254902,
+                "false_positives": 147,
+                "negatives": 153
+              },
+              "legitimate_returning": {
+                "false_positive_rate": 0.8758169934640523,
+                "false_positives": 134,
+                "negatives": 153
+              },
+              "legitimate_shared_device": {
+                "false_positive_rate": 0.6753246753246753,
+                "false_positives": 104,
+                "negatives": 154
+              },
+              "normal": {
+                "false_positive_rate": 0.0,
+                "false_positives": 0,
+                "negatives": 3209
+              }
+            },
+            "metrics": {
+              "false_positives_per_1000": 103.08738880167452,
+              "flagged": 487,
+              "fn": 90,
+              "fp": 394,
+              "fpr": 0.10308738880167452,
+              "negatives": 3822,
+              "positives": 183,
+              "precision": 0.19096509240246407,
+              "precision_ci_95": {
+                "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                "lower": 0.15852699882193239,
+                "method": "Wilson score, 95%",
+                "upper": 0.22824036854106738
+              },
+              "recall": 0.5081967213114754,
+              "tn": 3428,
+              "tp": 93
+            },
+            "per_pattern_recall": {
+              "ato": {
+                "detected": 10,
+                "positives": 20,
+                "recall": 0.5
+              },
+              "farm": {
+                "detected": 43,
+                "positives": 83,
+                "recall": 0.5180722891566265
+              },
+              "quota": {
+                "detected": 20,
+                "positives": 40,
+                "recall": 0.5
+              },
+              "spam_fanout": {
+                "detected": 20,
+                "positives": 40,
+                "recall": 0.5
+              }
+            }
+          }
+        }
+      },
+      "scenario": "challenge",
+      "schema_version": 2,
+      "seed": 17,
+      "selected_model": "hist_gradient_boosting",
+      "selection": {
+        "metric": "validation_average_precision",
+        "scores": {
+          "hist_gradient_boosting": 0.9939967455617961,
+          "logistic_regression": 0.8757545103300144
+        },
+        "tie_break": "alphabetical model name"
+      },
+      "source_sha256": "26e0b1376dd847d71880168739c27fdc4afe2d350d5310651da6204d724d11db",
+      "split_strategy": "synthetic label/behavior-stratified ASN/device groups, seeded group order, target 60/20/20; rare behaviors pooled within label"
+    },
+    {
+      "abuse_rate_test": 0.04593110334498253,
+      "as_of": 1781209600,
+      "config": {
+        "challenge_legitimate_fraction": 0.04,
+        "challenge_subtle_fraction": 0.5,
+        "days": 14,
+        "frac_ato": 0.005,
+        "frac_farm": 0.02,
+        "frac_quota": 0.01,
+        "frac_spam_fanout": 0.01,
+        "max_daily_events": 40,
+        "min_daily_events": 5,
+        "n_accounts": 20000,
+        "n_asns": 800,
+        "scenario": "challenge",
+        "seed": 29,
+        "start_ts": 1780000000
+      },
+      "counts": {
+        "accounts": 20000,
+        "ato": 100,
+        "events": 3882808,
+        "farm": 400,
+        "normal": 19100,
+        "quota": 200,
+        "spam_fanout": 200
+      },
+      "evaluation_scope": "retrospective synthetic accounts; no chronological holdout",
+      "min_alerts": 5,
+      "models": {
+        "hist_gradient_boosting": {
+          "average_precision": 0.992567585723948,
+          "tiers": {
+            "suspend": {
+              "behavior_false_positives": {
+                "legitimate_broadcast": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 153
+                },
+                "legitimate_bursty_api": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 153
+                },
+                "legitimate_returning": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 153
+                },
+                "legitimate_shared_device": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 154
+                },
+                "normal": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 3209
+                }
+              },
+              "calibration": {
+                "feasible": true,
+                "metrics": {
+                  "false_positives_per_1000": 0.0,
+                  "flagged": 163,
+                  "fn": 22,
+                  "fp": 0,
+                  "fpr": 0.0,
+                  "negatives": 3821,
+                  "positives": 185,
+                  "precision": 1.0,
+                  "precision_ci_95": {
+                    "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                    "lower": 0.9769753941984973,
+                    "method": "Wilson score, 95%",
+                    "upper": 1.0
+                  },
+                  "recall": 0.8810810810810811,
+                  "tn": 3821,
+                  "tp": 163
+                },
+                "min_alerts": 5,
+                "reason": null
+              },
+              "incremental_vs_rules": {
+                "additional_false_positives": 0,
+                "additional_true_positives": 112,
+                "avoided_rule_false_positives": 113,
+                "missed_rule_true_positives": 10
+              },
+              "metrics": {
+                "false_positives_per_1000": 0.0,
+                "flagged": 163,
+                "fn": 21,
+                "fp": 0,
+                "fpr": 0.0,
+                "negatives": 3822,
+                "positives": 184,
+                "precision": 1.0,
+                "precision_ci_95": {
+                  "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                  "lower": 0.9769753941984973,
+                  "method": "Wilson score, 95%",
+                  "upper": 1.0
+                },
+                "recall": 0.8858695652173914,
+                "tn": 3822,
+                "tp": 163
+              },
+              "per_pattern_recall": {
+                "ato": {
+                  "detected": 11,
+                  "positives": 20,
+                  "recall": 0.55
+                },
+                "farm": {
+                  "detected": 74,
+                  "positives": 84,
+                  "recall": 0.8809523809523809
+                },
+                "quota": {
+                  "detected": 40,
+                  "positives": 40,
+                  "recall": 1.0
+                },
+                "spam_fanout": {
+                  "detected": 38,
+                  "positives": 40,
+                  "recall": 0.95
+                }
+              },
+              "precision_floor": 0.99,
+              "threshold": 0.9847722386759533
+            },
+            "throttle": {
+              "behavior_false_positives": {
+                "legitimate_broadcast": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 153
+                },
+                "legitimate_bursty_api": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 153
+                },
+                "legitimate_returning": {
+                  "false_positive_rate": 0.05228758169934641,
+                  "false_positives": 8,
+                  "negatives": 153
+                },
+                "legitimate_shared_device": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 154
+                },
+                "normal": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 3209
+                }
+              },
+              "calibration": {
+                "feasible": true,
+                "metrics": {
+                  "false_positives_per_1000": 2.617115938236064,
+                  "flagged": 180,
+                  "fn": 15,
+                  "fp": 10,
+                  "fpr": 0.0026171159382360636,
+                  "negatives": 3821,
+                  "positives": 185,
+                  "precision": 0.9444444444444444,
+                  "precision_ci_95": {
+                    "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                    "lower": 0.9007683865825439,
+                    "method": "Wilson score, 95%",
+                    "upper": 0.9695467263760221
+                  },
+                  "recall": 0.918918918918919,
+                  "tn": 3811,
+                  "tp": 170
+                },
+                "min_alerts": 5,
+                "reason": null
+              },
+              "incremental_vs_rules": {
+                "additional_false_positives": 0,
+                "additional_true_positives": 93,
+                "avoided_rule_false_positives": 393,
+                "missed_rule_true_positives": 6
+              },
+              "metrics": {
+                "false_positives_per_1000": 2.0931449502878072,
+                "flagged": 186,
+                "fn": 6,
+                "fp": 8,
+                "fpr": 0.0020931449502878076,
+                "negatives": 3822,
+                "positives": 184,
+                "precision": 0.956989247311828,
+                "precision_ci_95": {
+                  "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                  "lower": 0.9174368471655245,
+                  "method": "Wilson score, 95%",
+                  "upper": 0.9780472112485312
+                },
+                "recall": 0.967391304347826,
+                "tn": 3814,
+                "tp": 178
+              },
+              "per_pattern_recall": {
+                "ato": {
+                  "detected": 14,
+                  "positives": 20,
+                  "recall": 0.7
+                },
+                "farm": {
+                  "detected": 84,
+                  "positives": 84,
+                  "recall": 1.0
+                },
+                "quota": {
+                  "detected": 40,
+                  "positives": 40,
+                  "recall": 1.0
+                },
+                "spam_fanout": {
+                  "detected": 40,
+                  "positives": 40,
+                  "recall": 1.0
+                }
+              },
+              "precision_floor": 0.9,
+              "threshold": 0.19855614097075958
+            }
+          },
+          "validation_average_precision": 0.9792116928586498
+        },
+        "logistic_regression": {
+          "average_precision": 0.8746894971870609,
+          "tiers": {
+            "suspend": {
+              "behavior_false_positives": {
+                "legitimate_broadcast": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 153
+                },
+                "legitimate_bursty_api": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 153
+                },
+                "legitimate_returning": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 153
+                },
+                "legitimate_shared_device": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 154
+                },
+                "normal": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 3209
+                }
+              },
+              "calibration": {
+                "feasible": true,
+                "metrics": {
+                  "false_positives_per_1000": 0.0,
+                  "flagged": 38,
+                  "fn": 147,
+                  "fp": 0,
+                  "fpr": 0.0,
+                  "negatives": 3821,
+                  "positives": 185,
+                  "precision": 1.0,
+                  "precision_ci_95": {
+                    "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                    "lower": 0.908190131774416,
+                    "method": "Wilson score, 95%",
+                    "upper": 0.9999999999999999
+                  },
+                  "recall": 0.20540540540540542,
+                  "tn": 3821,
+                  "tp": 38
+                },
+                "min_alerts": 5,
+                "reason": null
+              },
+              "incremental_vs_rules": {
+                "additional_false_positives": 0,
+                "additional_true_positives": 34,
+                "avoided_rule_false_positives": 113,
+                "missed_rule_true_positives": 53
+              },
+              "metrics": {
+                "false_positives_per_1000": 0.0,
+                "flagged": 42,
+                "fn": 142,
+                "fp": 0,
+                "fpr": 0.0,
+                "negatives": 3822,
+                "positives": 184,
+                "precision": 1.0,
+                "precision_ci_95": {
+                  "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                  "lower": 0.916201209134296,
+                  "method": "Wilson score, 95%",
+                  "upper": 0.9999999999999999
+                },
+                "recall": 0.22826086956521738,
+                "tn": 3822,
+                "tp": 42
+              },
+              "per_pattern_recall": {
+                "ato": {
+                  "detected": 0,
+                  "positives": 20,
+                  "recall": 0.0
+                },
+                "farm": {
+                  "detected": 0,
+                  "positives": 84,
+                  "recall": 0.0
+                },
+                "quota": {
+                  "detected": 14,
+                  "positives": 40,
+                  "recall": 0.35
+                },
+                "spam_fanout": {
+                  "detected": 28,
+                  "positives": 40,
+                  "recall": 0.7
+                }
+              },
+              "precision_floor": 0.99,
+              "threshold": 0.9991761107885895
+            },
+            "throttle": {
+              "behavior_false_positives": {
+                "legitimate_broadcast": {
+                  "false_positive_rate": 0.006535947712418301,
+                  "false_positives": 1,
+                  "negatives": 153
+                },
+                "legitimate_bursty_api": {
+                  "false_positive_rate": 0.013071895424836602,
+                  "false_positives": 2,
+                  "negatives": 153
+                },
+                "legitimate_returning": {
+                  "false_positive_rate": 0.0,
+                  "false_positives": 0,
+                  "negatives": 153
+                },
+                "legitimate_shared_device": {
+                  "false_positive_rate": 0.045454545454545456,
+                  "false_positives": 7,
+                  "negatives": 154
+                },
+                "normal": {
+                  "false_positive_rate": 0.0009348706762231225,
+                  "false_positives": 3,
+                  "negatives": 3209
+                }
+              },
+              "calibration": {
+                "feasible": true,
+                "metrics": {
+                  "false_positives_per_1000": 3.1405391258832767,
+                  "flagged": 140,
+                  "fn": 57,
+                  "fp": 12,
+                  "fpr": 0.003140539125883277,
+                  "negatives": 3821,
+                  "positives": 185,
+                  "precision": 0.9142857142857143,
+                  "precision_ci_95": {
+                    "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                    "lower": 0.8561546785666259,
+                    "method": "Wilson score, 95%",
+                    "upper": 0.9502887554130033
+                  },
+                  "recall": 0.6918918918918919,
+                  "tn": 3809,
+                  "tp": 128
+                },
+                "min_alerts": 5,
+                "reason": null
+              },
+              "incremental_vs_rules": {
+                "additional_false_positives": 3,
+                "additional_true_positives": 41,
+                "avoided_rule_false_positives": 391,
+                "missed_rule_true_positives": 13
+              },
+              "metrics": {
+                "false_positives_per_1000": 3.401360544217687,
+                "flagged": 132,
+                "fn": 65,
+                "fp": 13,
+                "fpr": 0.003401360544217687,
+                "negatives": 3822,
+                "positives": 184,
+                "precision": 0.9015151515151515,
+                "precision_ci_95": {
+                  "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                  "lower": 0.8387827994358381,
+                  "method": "Wilson score, 95%",
+                  "upper": 0.9415386202561884
+                },
+                "recall": 0.6467391304347826,
+                "tn": 3809,
+                "tp": 119
+              },
+              "per_pattern_recall": {
+                "ato": {
+                  "detected": 3,
+                  "positives": 20,
+                  "recall": 0.15
+                },
+                "farm": {
+                  "detected": 38,
+                  "positives": 84,
+                  "recall": 0.4523809523809524
+                },
+                "quota": {
+                  "detected": 38,
+                  "positives": 40,
+                  "recall": 0.95
+                },
+                "spam_fanout": {
+                  "detected": 40,
+                  "positives": 40,
+                  "recall": 1.0
+                }
+              },
+              "precision_floor": 0.9,
+              "threshold": 0.9110408922330107
+            }
+          },
+          "validation_average_precision": 0.8988876229918837
+        }
+      },
+      "n_test": 4006,
+      "n_train": 11988,
+      "n_validation": 4006,
+      "rules": {
+        "tiers": {
+          "suspend": {
+            "behavior_false_positives": {
+              "legitimate_broadcast": {
+                "false_positive_rate": 0.05228758169934641,
+                "false_positives": 8,
+                "negatives": 153
+              },
+              "legitimate_bursty_api": {
+                "false_positive_rate": 0.0,
+                "false_positives": 0,
+                "negatives": 153
+              },
+              "legitimate_returning": {
+                "false_positive_rate": 0.0,
+                "false_positives": 0,
+                "negatives": 153
+              },
+              "legitimate_shared_device": {
+                "false_positive_rate": 0.6818181818181818,
+                "false_positives": 105,
+                "negatives": 154
+              },
+              "normal": {
+                "false_positive_rate": 0.0,
+                "false_positives": 0,
+                "negatives": 3209
+              }
+            },
+            "metrics": {
+              "false_positives_per_1000": 29.56567242281528,
+              "flagged": 174,
+              "fn": 123,
+              "fp": 113,
+              "fpr": 0.02956567242281528,
+              "negatives": 3822,
+              "positives": 184,
+              "precision": 0.3505747126436782,
+              "precision_ci_95": {
+                "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                "lower": 0.2836009342372594,
+                "method": "Wilson score, 95%",
+                "upper": 0.4240038034610061
+              },
+              "recall": 0.33152173913043476,
+              "tn": 3709,
+              "tp": 61
+            },
+            "per_pattern_recall": {
+              "ato": {
+                "detected": 0,
+                "positives": 20,
+                "recall": 0.0
+              },
+              "farm": {
+                "detected": 41,
+                "positives": 84,
+                "recall": 0.4880952380952381
+              },
+              "quota": {
+                "detected": 0,
+                "positives": 40,
+                "recall": 0.0
+              },
+              "spam_fanout": {
+                "detected": 20,
+                "positives": 40,
+                "recall": 0.5
+              }
+            }
+          },
+          "throttle": {
+            "behavior_false_positives": {
+              "legitimate_broadcast": {
+                "false_positive_rate": 0.05228758169934641,
+                "false_positives": 8,
+                "negatives": 153
+              },
+              "legitimate_bursty_api": {
+                "false_positive_rate": 0.9934640522875817,
+                "false_positives": 152,
+                "negatives": 153
+              },
+              "legitimate_returning": {
+                "false_positive_rate": 0.8888888888888888,
+                "false_positives": 136,
+                "negatives": 153
+              },
+              "legitimate_shared_device": {
+                "false_positive_rate": 0.6818181818181818,
+                "false_positives": 105,
+                "negatives": 154
+              },
+              "normal": {
+                "false_positive_rate": 0.0,
+                "false_positives": 0,
+                "negatives": 3209
+              }
+            },
+            "metrics": {
+              "false_positives_per_1000": 104.91889063317635,
+              "flagged": 492,
+              "fn": 93,
+              "fp": 401,
+              "fpr": 0.10491889063317635,
+              "negatives": 3822,
+              "positives": 184,
+              "precision": 0.18495934959349594,
+              "precision_ci_95": {
+                "assumption": "Descriptive account-level interval; assumes independent accounts and does not account for cohort dependence.",
+                "lower": 0.15313835428689362,
+                "method": "Wilson score, 95%",
+                "upper": 0.22166180716531367
+              },
+              "recall": 0.4945652173913043,
+              "tn": 3421,
+              "tp": 91
+            },
+            "per_pattern_recall": {
+              "ato": {
+                "detected": 10,
+                "positives": 20,
+                "recall": 0.5
+              },
+              "farm": {
+                "detected": 41,
+                "positives": 84,
+                "recall": 0.4880952380952381
+              },
+              "quota": {
+                "detected": 20,
+                "positives": 40,
+                "recall": 0.5
+              },
+              "spam_fanout": {
+                "detected": 20,
+                "positives": 40,
+                "recall": 0.5
+              }
+            }
+          }
+        }
+      },
+      "scenario": "challenge",
+      "schema_version": 2,
+      "seed": 29,
+      "selected_model": "hist_gradient_boosting",
+      "selection": {
+        "metric": "validation_average_precision",
+        "scores": {
+          "hist_gradient_boosting": 0.9792116928586498,
+          "logistic_regression": 0.8988876229918837
+        },
+        "tie_break": "alphabetical model name"
+      },
+      "source_sha256": "26e0b1376dd847d71880168739c27fdc4afe2d350d5310651da6204d724d11db",
+      "split_strategy": "synthetic label/behavior-stratified ASN/device groups, seeded group order, target 60/20/20; rare behaviors pooled within label"
+    }
+  ],
+  "scenarios": [
+    "baseline",
+    "challenge"
+  ],
+  "schema_version": 1,
+  "seeds": [
+    7,
+    17,
+    29
+  ]
+}

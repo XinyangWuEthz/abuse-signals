@@ -9,7 +9,7 @@ from abuse_signals.config import GenConfig
 from abuse_signals.features import build_features
 from abuse_signals.generate import generate
 
-TEST_CONFIG = GenConfig(seed=11, n_accounts=1_500)
+TEST_CONFIG = GenConfig(seed=11, n_accounts=5_000)
 
 
 @pytest.fixture(scope="session")
@@ -19,3 +19,10 @@ def db_path(tmp_path_factory) -> str:
     generate(path, TEST_CONFIG)
     build_features(path)
     return str(path)
+
+
+@pytest.fixture(scope="session")
+def evaluation(db_path):
+    from abuse_signals.train import train
+
+    return train(db_path, seed=7)

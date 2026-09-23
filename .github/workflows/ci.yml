@@ -4,6 +4,12 @@ on:
   push:
     branches: [main]
   pull_request:
+  workflow_dispatch:
+
+env:
+  OMP_NUM_THREADS: "2"
+  OPENBLAS_NUM_THREADS: "1"
+  LOKY_MAX_CPU_COUNT: "2"
 
 jobs:
   test:
@@ -13,8 +19,25 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install -r requirements.txt
-      # Unit tests + the end-to-end regression gate: rules-layer precision and
-      # classifier PR-AUC floors on a fixed-seed synthetic dataset. A change that
-      # degrades detection quality fails this job.
+      - run: pip install -r requirements.txt -r requirements-benchmark.txt
       - run: pytest -q
+
+  benchmark:
+    # PRs use the small regression fixture; main/manual runs exercise 20K accounts.
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt -r requirements-benchmark.txt
+      - run: python -m abuse_signals.benchmark --accounts 20000 --seeds 7 17 29 --scenarios baseline challenge --out reports/evaluation
+      - uses: actions/upload-artifact@v4
+        with:
+          name: synthetic-evaluation
+          path: |
+            reports/evaluation/**/*.json
+            reports/evaluation/**/*.jsonl
+            reports/evaluation/**/*.md
+          retention-days: 30

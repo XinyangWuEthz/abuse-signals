@@ -7,6 +7,13 @@
 -- into an indexed intermediate table makes every join index-driven: same result in
 -- seconds. Regression-guarded by the test-suite runtime itself.
 
+-- Every signal uses this fixed observation cutoff, including cohort membership.
+-- Views preserve the source indexes while filtering future observations.
+CREATE TEMP VIEW _f_accounts AS
+SELECT * FROM accounts WHERE signup_ts <= (SELECT as_of FROM _feature_cutoff);
+CREATE TEMP VIEW _f_events AS
+SELECT * FROM events WHERE ts <= (SELECT as_of FROM _feature_cutoff);
+
 DROP TABLE IF EXISTS account_features;
 DROP TABLE IF EXISTS _f_base;
 DROP TABLE IF EXISTS _f_bursts;
@@ -22,8 +29,8 @@ CREATE TABLE _f_base AS
 SELECT a.account_id,
        COUNT(e.ts)                                   AS total_events,
        COALESCE((MAX(e.ts) - MIN(e.ts)) / 3600.0, 0) AS active_span_hours
-FROM accounts a
-LEFT JOIN events e ON e.account_id = a.account_id
+FROM _f_accounts a
+LEFT JOIN _f_events e ON e.account_id = a.account_id
 GROUP BY a.account_id;
 CREATE UNIQUE INDEX _ix_base ON _f_base(account_id);
 
@@ -32,7 +39,7 @@ CREATE TABLE _f_bursts AS
 SELECT account_id, MAX(cnt) AS max_burst_5min
 FROM (
     SELECT account_id, ts / 300 AS bucket, COUNT(*) AS cnt
-    FROM events
+    FROM _f_events
     GROUP BY account_id, bucket
 )
 GROUP BY account_id;
@@ -44,7 +51,7 @@ SELECT account_id,
        COUNT(*)                     AS msg_events,
        COUNT(DISTINCT target_id)    AS distinct_targets,
        COUNT(DISTINCT payload_hash) AS distinct_payloads
-FROM events
+FROM _f_events
 WHERE action = 'message_send'
 GROUP BY account_id;
 CREATE UNIQUE INDEX _ix_msg ON _f_msg(account_id);
@@ -54,7 +61,7 @@ CREATE TABLE _f_fanout AS
 SELECT account_id, MAX(t) AS max_fanout_per_payload
 FROM (
     SELECT account_id, payload_hash, COUNT(DISTINCT target_id) AS t
-    FROM events
+    FROM _f_events
     WHERE action = 'message_send'
     GROUP BY account_id, payload_hash
 )
@@ -63,7 +70,7 @@ CREATE UNIQUE INDEX _ix_fanout ON _f_fanout(account_id);
 
 CREATE TABLE _f_api AS
 SELECT account_id, COUNT(*) AS api_calls
-FROM events
+FROM _f_events
 WHERE action = 'api_call'
 GROUP BY account_id;
 CREATE UNIQUE INDEX _ix_api ON _f_api(account_id);
@@ -74,23 +81,23 @@ SELECT account_id, MAX(gap) / 3600.0 AS max_gap_hours
 FROM (
     SELECT account_id,
            ts - LAG(ts) OVER (PARTITION BY account_id ORDER BY ts) AS gap
-    FROM events
+    FROM _f_events
 )
 WHERE gap IS NOT NULL
 GROUP BY account_id;
 CREATE UNIQUE INDEX _ix_gaps ON _f_gaps(account_id);
 
--- Recency: activity inside the trailing 48h of the horizon.
--- (Uncorrelated scalar subquery: evaluated once, not per row.)
+-- Recency: the trailing 48h at the fixed cutoff, inclusive at both endpoints.
 CREATE TABLE _f_recent AS
 SELECT account_id, COUNT(*) AS events_last_48h
-FROM events
-WHERE ts > (SELECT MAX(ts) FROM events) - 172800
+FROM _f_events
+WHERE ts >= (SELECT as_of FROM _feature_cutoff) - 172800
 GROUP BY account_id;
 CREATE UNIQUE INDEX _ix_recent ON _f_recent(account_id);
 
 -- Signup clustering: accounts sharing ASN + device fingerprint that signed up
 -- within +/-30 minutes of each other (windowed count, includes self).
+-- This is a retrospective snapshot at the cutoff, not a signup-time decision.
 CREATE TABLE _f_cohort AS
 SELECT account_id,
        COUNT(*) OVER (
@@ -98,7 +105,7 @@ SELECT account_id,
            ORDER BY signup_ts
            RANGE BETWEEN 1800 PRECEDING AND 1800 FOLLOWING
        ) AS signup_cohort_30min
-FROM accounts;
+FROM _f_accounts;
 CREATE UNIQUE INDEX _ix_cohort ON _f_cohort(account_id);
 
 -- Assemble: one indexed join per signal family.
@@ -140,3 +147,5 @@ DROP TABLE _f_api;
 DROP TABLE _f_gaps;
 DROP TABLE _f_recent;
 DROP TABLE _f_cohort;
+DROP VIEW _f_accounts;
+DROP VIEW _f_events;

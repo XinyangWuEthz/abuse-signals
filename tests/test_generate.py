@@ -1,5 +1,7 @@
 import sqlite3
 
+import pytest
+
 from abuse_signals.config import GenConfig
 from abuse_signals.generate import generate
 
@@ -28,16 +30,24 @@ def test_accounts_and_events_written(db_path):
     assert orphans == 0
 
 
-def test_same_seed_is_deterministic(tmp_path):
-    cfg = GenConfig(seed=99, n_accounts=300)
+@pytest.mark.parametrize("scenario", ["baseline", "challenge"])
+def test_same_seed_is_deterministic(tmp_path, scenario):
+    cfg = GenConfig(seed=99, n_accounts=300, scenario=scenario)
     counts_a = generate(tmp_path / "a.db", cfg)
     counts_b = generate(tmp_path / "b.db", cfg)
     assert counts_a == counts_b
 
-    def totals(path):
-        conn = sqlite3.connect(path)
-        row = conn.execute("SELECT COUNT(*), SUM(ts) FROM events").fetchone()
-        conn.close()
-        return row
+    def logical_rows(path):
+        with sqlite3.connect(path) as conn:
+            return {
+                table: conn.execute(f"SELECT * FROM {table} ORDER BY {ordering}").fetchall()
+                for table, ordering in [
+                    ("accounts", "account_id"),
+                    ("events", "account_id, ts, action, payload_hash, target_id, ip"),
+                    ("labels", "account_id"),
+                    ("account_metadata", "account_id"),
+                    ("dataset_metadata", "key"),
+                ]
+            }
 
-    assert totals(tmp_path / "a.db") == totals(tmp_path / "b.db")
+    assert logical_rows(tmp_path / "a.db") == logical_rows(tmp_path / "b.db")

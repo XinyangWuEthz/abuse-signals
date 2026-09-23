@@ -8,3 +8,6 @@ metrics.json
 .pytest_cache/
 .DS_Store
 *.egg-info/
+# Full reports contain generated per-account evidence and SQLite databases.
+# A compact, reviewed benchmark snapshot lives in benchmarks/reference/.
+reports/
